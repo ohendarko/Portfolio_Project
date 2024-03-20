@@ -1,3 +1,30 @@
 body {
   font-family: 'Times New Roman', Times, serif;
+  align-items: center;
+}
+
+.top-line-member {
+  display: flex;
+  place-items: center;
+  text-align: justify;
+  cursor: pointer;
+}
+
+.top-line {
+  display: grid;
+  grid-template-columns: 450px 100px 100px 100px 100px 100px;
+  align-items: center;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.Mastered {
+  text-align: center;
+  background-color: green;
+  color: white;
+  padding-left: 15px;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 1cap;
 }
