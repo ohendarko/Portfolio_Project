@@ -12,12 +12,15 @@ body {
 
 .top-line {
   display: grid;
-  width: 100%;
-  grid-template-columns: minmax(250px, 1250px) 100px 100px 100px 100px 100px;
+  width: 70%;
+  grid-template-columns: minmax(300px, 1550px) 100px 100px 100px 100px 100px;
+  align-self: center;
   align-items: center;
+  left: 50%;
+  transform: translate(-50%);
   font-weight: bold;
-  margin-left: 30px;
-  margin-right: 530px;
+  position: relative;
+  margin-left: minmax(0px, 50px);
 }
 
 .Mastered {
@@ -35,9 +38,39 @@ body {
   font-size: 40px;
   margin-top: 50px;
   text-align: center;
+  position: relative;
+  margin-bottom: 70px;
 }
 
 .catchphrase-paragraph {
   margin-bottom: 10px;
   margin-top: 10px;
+}
+
+.display-menu {
+  display: grid;
+  grid-template-columns: 150px minmax(300px, 1000px) 400px;
+  left: 50%;
+  transform: translate(15%);
+  align-items: baseline;
+  font-size: 20px;
+}
+
+.updates {
+  font-size: 40px;
+}
+
+.menu {
+  border-radius: 3cap;
+  border-color: gray;
+  border: none;
+  padding: 10px;
+  margin-right: 5px;
+  font-size: 12px !important;
+  cursor: pointer;
+}
+
+.Search {
+  background-color: blueviolet;
+  color: white;
 }
