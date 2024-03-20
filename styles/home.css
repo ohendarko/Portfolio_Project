@@ -12,10 +12,12 @@ body {
 
 .top-line {
   display: grid;
-  grid-template-columns: 450px 100px 100px 100px 100px 100px;
+  width: 100%;
+  grid-template-columns: minmax(250px, 1250px) 100px 100px 100px 100px 100px;
   align-items: center;
   font-weight: bold;
   margin-left: 30px;
+  margin-right: 530px;
 }
 
 .Mastered {
@@ -27,4 +29,15 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 1cap;
+}
+
+.catchphrase {
+  font-size: 40px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.catchphrase-paragraph {
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
