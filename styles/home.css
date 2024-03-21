@@ -148,3 +148,16 @@ hr {
 .select-algorithm2:hover {
   background-color: rgb(12, 82, 82);
 }
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+.bls {
+  padding: 30px;
+}
