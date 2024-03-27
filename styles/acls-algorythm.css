@@ -1,3 +1,7 @@
+body {
+  font-size: 20px;
+}
+
 .algorythm-box {
   border-color: black;
   border-width: 1px;
@@ -7,7 +11,48 @@
   background-color: rgb(209, 234, 246);
 }
 
+.shock-box {
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px;
+  border-radius: 1cap;
+  background-color: rgb(241, 196, 196);
+}
+
+.asystole {
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px;
+  border-radius: 1cap;
+  background-color: rgb(218, 221, 222);
+}
+
+#checkbox {
+  cursor: pointer;
+}
+
+#checkbox:hover {
+  border-color: blue;
+}
+
 .arrow-down {
   font-size: 30px;
   margin: 0px;
+}
+
+.algorythm-button {
+  padding: 5px 15px 5px 15px;
+  border-radius: 0.5cap;
+  border-width: 0.5px;
+  cursor: pointer;
+}
+
+.algorythm-button:hover {
+  padding: 7px 17px 7px 17px;
+  background-color: orange;
+  color: white;
+  font-size: 15px;
+  border-width: 0px !important;
 }
