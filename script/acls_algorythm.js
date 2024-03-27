@@ -31,8 +31,36 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
     document.querySelector('.ten').innerHTML = ``;
     status_on = false;
   }
+
+  document.querySelector('.nsr1-no').addEventListener('click', () => {
+    if (!status_on2) {
+      document.querySelector('.ar5').innerHTML = `↓`;
+      document.querySelector('.eleven').innerHTML = `<p>CPR 2 min</p>
+      <ul>
+        <li>Treat reversible causes</li>
+      </ul>`;
+      document.querySelector('.ar6').innerHTML = `↓`;
+      status_on2 = true;
+    } else {
+      document.querySelector('.ar5').innerHTML = ``;
+      document.querySelector('.eleven').innerHTML = ``;
+      document.querySelector('.ar6').innerHTML = `↓`;
+      status_on2 = false;
+    }
+  });
 });
 
 document.querySelector('.nsr1-no').addEventListener('click', () => {
-
-})
+  //if (!status_on2) {
+  document.querySelector('.ar5').innerHTML = `↓`;
+  document.querySelector('.eleven').innerHTML = `<p>CPR 2 min</p>
+    <ul>
+      <li>Treat reversible causes</li>
+    </ul>`;
+  //status_on2 = true;
+  /*} else {
+    document.querySelector('.ar5').innerHTML = ``;
+    document.querySelector('.eleven').innerHTML = ``;
+    status_on2 = false;
+  }*/
+});
