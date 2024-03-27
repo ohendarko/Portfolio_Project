@@ -1,5 +1,6 @@
 let status_on = false;
 let status_on2 = false;
+let status_on3 = false;
 document.querySelector('.nsr0-no').addEventListener('click', () => {
   if (!status_on) {
     document.querySelector('.nine').innerHTML = `Asystole/PEA`;
@@ -40,27 +41,39 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
         <li>Treat reversible causes</li>
       </ul>`;
       document.querySelector('.ar6').innerHTML = `↓`;
+      document.querySelector('.nsr2').innerHTML = `<p>Rhythm Shockable?</p>
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <button class="algorythm-button nsr2-yes" style="margin-right: 20px;">Yes</button>
+        <button class="algorythm-button nsr2-no">No</button>`;
       status_on2 = true;
     } else {
       document.querySelector('.ar5').innerHTML = ``;
       document.querySelector('.eleven').innerHTML = ``;
       document.querySelector('.ar6').innerHTML = ``;
+      document.querySelector('.nsr2').innerHTML = ``;
       status_on2 = false;
     }
-  });
-});
 
-document.querySelector('.nsr1-no').addEventListener('click', () => {
-  //if (!status_on2) {
-  document.querySelector('.ar5').innerHTML = `↓`;
-  document.querySelector('.eleven').innerHTML = `<p>CPR 2 min</p>
-    <ul>
-      <li>Treat reversible causes</li>
-    </ul>`;
-  //status_on2 = true;
-  /*} else {
-    document.querySelector('.ar5').innerHTML = ``;
-    document.querySelector('.eleven').innerHTML = ``;
-    status_on2 = false;
-  }*/
+    document.querySelector('.nsr2-no').addEventListener('click', () => {
+      if (!status_on3) {
+        document.querySelector('.ar7').innerHTML = `↓`;
+        document.querySelector('.nsr3').innerHTML = `<p> Are there signs on return of spontaneus circulation (ROSC)?</p>
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <button class="algorythm-button nsr3-yes" style="margin-right: 20px;">Yes</button>
+          <button class="algorythm-button nsr3-no">No</button>
+        </div>`;
+        /*document.querySelector('.twelve').innerHTML = `<ul>
+        <li>If no signs on return of spontaneus circulation (ROSC), got to 10 or 11</li>
+        <li>If ROSC, go to post-cardiac arrest care</li>
+        <li>Consider appropriateness of continued rescuscitation</li>
+      </ul>`;
+      */
+        status_on3 = true;
+      } else {
+        document.querySelector('.ar7').innerHTML = ``;
+        document.querySelector('.twelve').innerHTML = ``;
+        status_on3 = false;
+      }
+    });
+  });
 });
