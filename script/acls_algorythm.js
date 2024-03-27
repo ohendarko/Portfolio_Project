@@ -79,9 +79,21 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
       document.querySelector('.nsr3-no').addEventListener('click', () => {
         if (!status_on4) {
           document.querySelector('.ar8').innerHTML = `↓`;
+          document.querySelector('.twelve').innerHTML = `<p>CPR 2 min</p>
+          <ul>
+            <li>IV/IO Access</li>
+            <li><strong>Epinephrine</strong> 1mg every 3 to 5 mins</li>
+            <li>Consider advanced airway, capnography</li>
+          </ul>
+          <p><strong>OR</strong></p>
+          <ul>
+            <li>Treat reversible causes</li>
+          </ul>
+        </div>`;
           status_on4 = true;
         } else {
           document.querySelector('.ar8').innerHTML = ``;
+          document.querySelector('.twelve').innerHTML = ``;
           status_on4 = false;
         }
       })
