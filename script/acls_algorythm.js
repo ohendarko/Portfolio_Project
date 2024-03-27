@@ -44,7 +44,7 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
     } else {
       document.querySelector('.ar5').innerHTML = ``;
       document.querySelector('.eleven').innerHTML = ``;
-      document.querySelector('.ar6').innerHTML = `↓`;
+      document.querySelector('.ar6').innerHTML = ``;
       status_on2 = false;
     }
   });
