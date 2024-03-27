@@ -1,6 +1,7 @@
 let status_on = false;
 let status_on2 = false;
 let status_on3 = false;
+let status_on4 = false;
 document.querySelector('.nsr0-no').addEventListener('click', () => {
   if (!status_on) {
     document.querySelector('.nine').innerHTML = `Asystole/PEA`;
@@ -71,9 +72,19 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
         status_on3 = true;
       } else {
         document.querySelector('.ar7').innerHTML = ``;
-        document.querySelector('.twelve').innerHTML = ``;
+        document.querySelector('.nsr3').innerHTML = ``;
         status_on3 = false;
       }
+
+      document.querySelector('.nsr3-no').addEventListener('click', () => {
+        if (!status_on4) {
+          document.querySelector('.ar8').innerHTML = `↓`;
+          status_on4 = true;
+        } else {
+          document.querySelector('.ar8').innerHTML = ``;
+          status_on4 = false;
+        }
+      })
     });
   });
 });
