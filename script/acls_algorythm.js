@@ -27,10 +27,11 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
     document.querySelector('.nine').innerHTML = ``;
     document.querySelector('.ar1').innerHTML = ``;
     document.querySelector('.ar2').innerHTML = ``;
-    document.querySelector('.ar2').innerHTML = ``;
-    document.querySelector('.ar2').innerHTML = ``;
+    document.querySelector('.ar3').innerHTML = ``;
+    document.querySelector('.ar4').innerHTML = ``;
     document.querySelector('.nine-A').innerHTML = ``;
     document.querySelector('.ten').innerHTML = ``;
+    document.querySelector('.nsr1').innerHTML = ``;
     status_on = false;
   }
 
@@ -100,3 +101,39 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
     });
   });
 });
+
+let status_yes = false;
+document.querySelector('.nsr0-yes').addEventListener('click', () => {
+  /*if (status_on) {
+    console.log('yes');
+    status_on = false;
+  }*/
+  if (!status_yes) {
+    document.querySelector('.nine').innerHTML = `VF/pVT`;
+    document.querySelector('.ar1').innerHTML = `↓`;
+    document.querySelector('.ar2').innerHTML = `↓`;
+    document.querySelector('.ar3').innerHTML = `↓`;
+    document.querySelector('.ar4').innerHTML = `↓`;
+    document.querySelector('.nine-A').innerHTML = `Shock`;
+    document.querySelector('.ten').innerHTML = `<p>CPR 2 min</p>
+    <ul>
+      <li>IV/IO Access</li>
+    </ul>`;
+    document.querySelector('.sr1').innerHTML = `<p>Rhythm Shockable?</p>
+    <div style="display: flex; justify-content: center; align-items: center;">
+      <button class="algorythm-button sr1-yes" style="margin-right: 20px;">Yes</button>
+      <button class="algorythm-button sr1-no">No</button>
+    </div>`
+    status_yes = true;
+  } else {
+    document.querySelector('.nine').innerHTML = ``;
+    document.querySelector('.ar1').innerHTML = ``;
+    document.querySelector('.ar2').innerHTML = ``;
+    document.querySelector('.ar3').innerHTML = ``;
+    document.querySelector('.ar4').innerHTML = ``;
+    document.querySelector('.nine-A').innerHTML = ``;
+    document.querySelector('.ten').innerHTML = ``;
+    document.querySelector('.nsr1').innerHTML = ``;
+    status_yes = false;
+  }
+})
