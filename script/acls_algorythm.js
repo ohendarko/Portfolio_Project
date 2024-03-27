@@ -103,6 +103,7 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
 });
 
 let status_yes = false;
+let status_yes2 = false;
 document.querySelector('.nsr0-yes').addEventListener('click', () => {
   /*if (status_on) {
     console.log('yes');
@@ -136,4 +137,19 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
     document.querySelector('.nsr1').innerHTML = ``;
     status_yes = false;
   }
-})
+
+  document.querySelector('.sr1-yes').addEventListener('click', () => {
+    if (!status_yes2) {
+      document.querySelector('.ar5').innerHTML = `↓`;
+      document.querySelector('.five').innerHTML = `Shock`;
+      document.querySelector('.ar6').innerHTML = `↓`;
+      status_yes2 = true;
+    } else {
+      document.querySelector('.ar5').innerHTML = ``;
+      document.querySelector('.five').innerHTML = ``;
+      document.querySelector('.ar6').innerHTML = ``;
+      status_yes2 = false;
+    }
+
+  });
+});
