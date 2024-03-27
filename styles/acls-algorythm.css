@@ -1,0 +1,13 @@
+.algorythm-box {
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px;
+  border-radius: 1cap;
+  background-color: rgb(209, 234, 246);
+}
+
+.arrow-down {
+  font-size: 30px;
+  margin: 0px;
+}

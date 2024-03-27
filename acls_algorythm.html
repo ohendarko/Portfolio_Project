@@ -6,6 +6,7 @@
   <title>MedAlgorythms- ACLS</title>
   <link rel="stylesheet" href="styles/bls.css">
   <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/acls-algorythm.css">
 </head>
 <body>
   <div class="container">
@@ -21,8 +22,21 @@
   <div class="container">
     <div><h2 style="color: green;">Adult Cardic Arrest Algorithm</h2></div>
   </div>
-  <div class="container">
-    <div style="border-color: black; border-width: 3px; border-style: solid;">Start CPR</div>
+  <div class="container" style="padding-top: 50px; padding-bottom: 40px;">
+    <div class="algorythm-box">
+      Start CPR
+      <p><input type="checkbox" id="checkbox" name="checkbox">Given Oxygen</p>
+      <p><input type="checkbox" id="checkbox" name="checkbox">Attach monitor/defibrillator</p>
+    </div>
+    <p class="arrow-down">↓</p>
+    <div class="algorythm-box">
+      <p>Rhythm Shockable?</p>
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <button style="margin-right: 20px;">Yes</button>
+        <button>No</button>
+      </div>   
+    </div>
+    <p class="arrow-down">↓</p>
   </div>
   
   
