@@ -112,12 +112,16 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
         <li> Consider <strong>Epinephrine</strong>, <strong>Amiodarone</strong> or <strong>Lidocaine</strong></li>
         <li>Treat reversible causes</li>
       </ul>`;
+      document.querySelector('.ar7').innerHTML = `↓`;
+      document.querySelector('.nsr3').innerHTML = ``;
       nsr1yes = true;
     } else {
       document.querySelector('.ar5').innerHTML = ``;
       document.querySelector('.fiveb').innerHTML = ``;
       document.querySelector('.ar6').innerHTML = ``;
       document.querySelector('.tenb').innerHTML = ``;
+      document.querySelector('.ar7').innerHTML = ``;
+      document.querySelector('.nsr3').innerHTML = ``;
       nsr1yes = false;
     }
   });
