@@ -130,12 +130,12 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
       nsr1yes = false;
     }
 
-    document.querySelector('.nsr4-yes').addEventListener('click', () => {
+    document.querySelector('.sr4-yes').addEventListener('click', () => {
       if (!nsr1yes2) {
         document.querySelector('.ar8').innerHTML = `↓`;
         document.querySelector('.twelveb').innerHTML = `Shock`;
         document.querySelector('.ar9').innerHTML = `↓`;
-        document.querySelector('.sr3').innerHTML = `<p>CPR 2 min</p>
+        document.querySelector('.sr4').innerHTML = `<p>CPR 2 min</p>
       <ul>
         <li> Consider <strong>Epinephrine</strong>, <strong>Amiodarone</strong> or <strong>Lidocaine</strong></li>
         <li>Treat reversible causes</li>
@@ -145,20 +145,20 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
         document.querySelector('.ar8').innerHTML = ``;
         document.querySelector('.twelveb').innerHTML = ``;
         document.querySelector('.ar9').innerHTML = ``;
-        document.querySelector('.sr3').innerHTML = ``;
+        document.querySelector('.sr4').innerHTML = ``;
         nsr1yes2 = false;
       }
     });
-    document.querySelector('.nsr4-no').addEventListener('click', () => {
+    document.querySelector('.sr4-no').addEventListener('click', () => {
       if (!nsr1yes3) {
         document.querySelector('.ar8').innerHTML = `↓`;
         document.querySelector('.twelveb').innerHTML = `<p> Are there signs on return of spontaneus circulation (ROSC)?</p>
     <div style="display: flex; justify-content: center; align-items: center;">
       <button class="algorythm-button nsr3-yes" style="margin-right: 20px;">Yes</button>
       <button class="algorythm-button nsr3-no">No</button>
-    </div>;`
+    </div>`;
         document.querySelector('.ar9').innerHTML = `↓`;
-        document.querySelector('.sr3').innerHTML = `<p>CPR 2 min</p>
+        document.querySelector('.sr4').innerHTML = `<p>CPR 2 min</p>
     <ul>
       <li> Consider <strong>Epinephrine</strong>, <strong>Amiodarone</strong> or <strong>Lidocaine</strong></li>
       <li>Treat reversible causes</li>
@@ -168,7 +168,7 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
         document.querySelector('.ar8').innerHTML = ``;
         document.querySelector('.twelveb').innerHTML = ``;
         document.querySelector('.ar9').innerHTML = ``;
-        document.querySelector('.sr3').innerHTML = ``;
+        document.querySelector('.sr4').innerHTML = ``;
         nsr1yes3 = false;
       }
     });
