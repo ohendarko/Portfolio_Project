@@ -97,13 +97,36 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
           document.querySelector('.twelve').innerHTML = ``;
           status_on4 = false;
         }
-      })
+      });
     });
+  });
+  let nsr1yes = true;
+
+  document.querySelector('.nsr1-yes').addEventListener('click', () => {
+    if (!nsr1yes) {
+      document.querySelector('.ar5').innerHTML = `↓`;
+      document.querySelector('.fiveb').innerHTML = `Shock`;
+      document.querySelector('.ar6').innerHTML = `↓`;
+      document.querySelector('.tenb').innerHTML = `<p>CPR 2 min</p>
+      <ul>
+        <li> Consoder <strong>Epinephrine</strong>, <strong>Amiodarone</strong> or <strong>Lidocaine</strong></li>
+        <li>Treat reversible causes</li>
+      </ul>`;
+      nsr1yes = true;
+    } else {
+      document.querySelector('.ar5').innerHTML = ``;
+      document.querySelector('.fiveb').innerHTML = ``;
+      document.querySelector('.ar6').innerHTML = ``;
+      document.querySelector('.tenb').innerHTML = ``;
+      nsr1yes = false;
+    }
   });
 });
 
 let status_yes = false;
 let status_yes2 = false;
+let status_yes3 = false;
+let status_yes4 = false;
 document.querySelector('.nsr0-yes').addEventListener('click', () => {
   /*if (status_on) {
     console.log('yes');
@@ -143,13 +166,70 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
       document.querySelector('.ar5').innerHTML = `↓`;
       document.querySelector('.five').innerHTML = `Shock`;
       document.querySelector('.ar6').innerHTML = `↓`;
+      document.querySelector('.tenn').innerHTML = `<p>CPR 2 min</p>
+      <ul>
+        <li><strong>Epinephrine</strong> 1mg every 3 to 5 mins</li>
+        <li>Consider advanced airway, capnography</li>
+      </ul>`;
+      document.querySelector('.ar7').innerHTML = `↓`;
+      document.querySelector('.sr2').innerHTML = `<p>Rhythm Shockable?</p>
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <button class="algorythm-button sr2-yes" style="margin-right: 20px;">Yes</button>
+        <button class="algorythm-button sr2-no">No</button>
+      </div>`;
       status_yes2 = true;
     } else {
       document.querySelector('.ar5').innerHTML = ``;
       document.querySelector('.five').innerHTML = ``;
       document.querySelector('.ar6').innerHTML = ``;
+      document.querySelector('.tenn').innerHTML = ``;
+      document.querySelector('.ar7').innerHTML = ``;
+      document.querySelector('.sr2').innerHTML = ``;
       status_yes2 = false;
     }
+
+    document.querySelector('.sr2-yes').addEventListener('click', () => {
+      if (!status_yes3) {
+        document.querySelector('.ar8').innerHTML = `↓`;
+        document.querySelector('.twelveb').innerHTML = `<p>CPR 2 min</p>
+        <ul>
+          <li><strong>Amiodarone</strong> or <strong>Lidocaine</strong></li>
+          <li>Treat reversible causes</li>
+        </ul>`;
+        document.querySelector('.ar9').innerHTML = `↓`;
+        document.querySelector('.sr3').innerHTML = `<p>Rhythm Shockable?</p>
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <button class="algorythm-button sr3-yes" style="margin-right: 20px;">Yes</button>
+          <button class="algorythm-button sr3-no">No</button>
+        </div>`;
+        status_yes3 = true;
+      } else {
+        document.querySelector('.ar8').innerHTML = ``;
+        document.querySelector('.twelveb').innerHTML = ``;
+        document.querySelector('.ar9').innerHTML = ``;
+        document.querySelector('.sr3').innerHTML = ``;
+        status_yes3 = false;
+      }
+
+      document.querySelector('.sr3-yes').addEventListener('click', () => {
+        document.querySelector('.ar8').innerHTML = ``;
+        document.querySelector('.ar5').innerHTML = ``;
+        document.querySelector('.ar6').innerHTML = ``;
+        document.querySelector('.ar7').innerHTML = ``;
+        document.querySelector('.fiveb').innerHTML = ``;
+        document.querySelector('.tenb').innerHTML = ``;
+        document.querySelector('.sr2').innerHTML = ``;
+        document.querySelector('.twelveb').innerHTML = ``;
+        document.querySelector('.ar9').innerHTML = ``;
+        document.querySelector('.sr3').innerHTML = ``;
+      })
+
+
+
+
+      //document.querySelector('.ar7').innerHTML = ``;
+      //document.querySelector('.sr2').innerHTML = ``;
+    });
 
   });
 });
