@@ -101,6 +101,8 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
     });
   });
   let nsr1yes = true;
+  let nsr1yes2 = true;
+  let nsr1yes3 = true;
 
   document.querySelector('.nsr1-yes').addEventListener('click', () => {
     if (!nsr1yes) {
@@ -108,15 +110,15 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
       document.querySelector('.fiveb').innerHTML = `Shock`;
       document.querySelector('.ar6').innerHTML = `↓`;
       document.querySelector('.tenb').innerHTML = `<p>CPR 2 min</p>
-      <ul>
-        <li> Consider <strong>Epinephrine</strong>, <strong>Amiodarone</strong> or <strong>Lidocaine</strong></li>
-        <li>Treat reversible causes</li>
-      </ul>`;
+    <ul>
+      <li> Consider <strong>Epinephrine</strong>, <strong>Amiodarone</strong> or <strong>Lidocaine</strong></li>
+      <li>Treat reversible causes</li>
+    </ul>`;
       document.querySelector('.ar7').innerHTML = `↓`;
       document.querySelector('.nsr3').innerHTML = `<p>Rhythm Shockable?</p>
-      <div style="display: flex; justify-content: center; align-items: center;">
-        <button class="algorythm-button nsr4-yes" style="margin-right: 20px;">Yes</button>
-        <button class="algorythm-button nsr4-no">No</button>`;
+    <div style="display: flex; justify-content: center; align-items: center;">
+      <button class="algorythm-button sr4-yes" style="margin-right: 20px;">Yes</button>
+      <button class="algorythm-button sr4-no">No</button>`;
       nsr1yes = true;
     } else {
       document.querySelector('.ar5').innerHTML = ``;
@@ -127,6 +129,49 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
       document.querySelector('.nsr3').innerHTML = ``;
       nsr1yes = false;
     }
+
+    document.querySelector('.nsr4-yes').addEventListener('click', () => {
+      if (!nsr1yes2) {
+        document.querySelector('.ar8').innerHTML = `↓`;
+        document.querySelector('.twelveb').innerHTML = `Shock`;
+        document.querySelector('.ar9').innerHTML = `↓`;
+        document.querySelector('.sr3').innerHTML = `<p>CPR 2 min</p>
+      <ul>
+        <li> Consider <strong>Epinephrine</strong>, <strong>Amiodarone</strong> or <strong>Lidocaine</strong></li>
+        <li>Treat reversible causes</li>
+      </ul>`;
+        nsr1yes2 = true;
+      } else {
+        document.querySelector('.ar8').innerHTML = ``;
+        document.querySelector('.twelveb').innerHTML = ``;
+        document.querySelector('.ar9').innerHTML = ``;
+        document.querySelector('.sr3').innerHTML = ``;
+        nsr1yes2 = false;
+      }
+    });
+    document.querySelector('.nsr4-no').addEventListener('click', () => {
+      if (!nsr1yes3) {
+        document.querySelector('.ar8').innerHTML = `↓`;
+        document.querySelector('.twelveb').innerHTML = `<p> Are there signs on return of spontaneus circulation (ROSC)?</p>
+    <div style="display: flex; justify-content: center; align-items: center;">
+      <button class="algorythm-button nsr3-yes" style="margin-right: 20px;">Yes</button>
+      <button class="algorythm-button nsr3-no">No</button>
+    </div>;`
+        document.querySelector('.ar9').innerHTML = `↓`;
+        document.querySelector('.sr3').innerHTML = `<p>CPR 2 min</p>
+    <ul>
+      <li> Consider <strong>Epinephrine</strong>, <strong>Amiodarone</strong> or <strong>Lidocaine</strong></li>
+      <li>Treat reversible causes</li>
+    </ul>`;
+        nsr1yes3 = true;
+      } else {
+        document.querySelector('.ar8').innerHTML = ``;
+        document.querySelector('.twelveb').innerHTML = ``;
+        document.querySelector('.ar9').innerHTML = ``;
+        document.querySelector('.sr3').innerHTML = ``;
+        nsr1yes3 = false;
+      }
+    });
   });
 });
 
@@ -147,14 +192,14 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
     document.querySelector('.ar4').innerHTML = `↓`;
     document.querySelector('.nine-A').innerHTML = `Shock`;
     document.querySelector('.ten').innerHTML = `<p>CPR 2 min</p>
-    <ul>
-      <li>IV/IO Access</li>
-    </ul>`;
+  <ul>
+    <li>IV/IO Access</li>
+  </ul>`;
     document.querySelector('.sr1').innerHTML = `<p>Rhythm Shockable?</p>
-    <div style="display: flex; justify-content: center; align-items: center;">
-      <button class="algorythm-button sr1-yes" style="margin-right: 20px;">Yes</button>
-      <button class="algorythm-button sr1-no">No</button>
-    </div>`
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <button class="algorythm-button sr1-yes" style="margin-right: 20px;">Yes</button>
+    <button class="algorythm-button sr1-no">No</button>
+  </div>`
     status_yes = true;
   } else {
     document.querySelector('.nine').innerHTML = ``;
@@ -174,16 +219,16 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
       document.querySelector('.five').innerHTML = `Shock`;
       document.querySelector('.ar6').innerHTML = `↓`;
       document.querySelector('.tenn').innerHTML = `<p>CPR 2 min</p>
-      <ul>
-        <li><strong>Epinephrine</strong> 1mg every 3 to 5 mins</li>
-        <li>Consider advanced airway, capnography</li>
-      </ul>`;
+    <ul>
+      <li><strong>Epinephrine</strong> 1mg every 3 to 5 mins</li>
+      <li>Consider advanced airway, capnography</li>
+    </ul>`;
       document.querySelector('.ar7').innerHTML = `↓`;
       document.querySelector('.sr2').innerHTML = `<p>Rhythm Shockable?</p>
-      <div style="display: flex; justify-content: center; align-items: center;">
-        <button class="algorythm-button sr2-yes" style="margin-right: 20px;">Yes</button>
-        <button class="algorythm-button sr2-no">No</button>
-      </div>`;
+    <div style="display: flex; justify-content: center; align-items: center;">
+      <button class="algorythm-button sr2-yes" style="margin-right: 20px;">Yes</button>
+      <button class="algorythm-button sr2-no">No</button>
+    </div>`;
       status_yes2 = true;
     } else {
       document.querySelector('.ar5').innerHTML = ``;
@@ -199,16 +244,16 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
       if (!status_yes3) {
         document.querySelector('.ar8').innerHTML = `↓`;
         document.querySelector('.twelveb').innerHTML = `<p>CPR 2 min</p>
-        <ul>
-          <li><strong>Amiodarone</strong> or <strong>Lidocaine</strong></li>
-          <li>Treat reversible causes</li>
-        </ul>`;
+      <ul>
+        <li><strong>Amiodarone</strong> or <strong>Lidocaine</strong></li>
+        <li>Treat reversible causes</li>
+      </ul>`;
         document.querySelector('.ar9').innerHTML = `↓`;
         document.querySelector('.sr3').innerHTML = `<p>Rhythm Shockable?</p>
-        <div style="display: flex; justify-content: center; align-items: center;">
-          <button class="algorythm-button sr3-yes" style="margin-right: 20px;">Yes</button>
-          <button class="algorythm-button sr3-no">No</button>
-        </div>`;
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <button class="algorythm-button sr3-yes" style="margin-right: 20px;">Yes</button>
+        <button class="algorythm-button sr3-no">No</button>
+      </div>`;
         status_yes3 = true;
       } else {
         document.querySelector('.ar8').innerHTML = ``;
@@ -229,14 +274,9 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
         document.querySelector('.twelveb').innerHTML = ``;
         document.querySelector('.ar9').innerHTML = ``;
         document.querySelector('.sr3').innerHTML = ``;
-      })
-
-
-
-
+      });
       //document.querySelector('.ar7').innerHTML = ``;
       //document.querySelector('.sr2').innerHTML = ``;
     });
-
   });
 });
