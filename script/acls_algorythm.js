@@ -109,7 +109,7 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
       document.querySelector('.ar6').innerHTML = `↓`;
       document.querySelector('.tenb').innerHTML = `<p>CPR 2 min</p>
       <ul>
-        <li> Consoder <strong>Epinephrine</strong>, <strong>Amiodarone</strong> or <strong>Lidocaine</strong></li>
+        <li> Consider <strong>Epinephrine</strong>, <strong>Amiodarone</strong> or <strong>Lidocaine</strong></li>
         <li>Treat reversible causes</li>
       </ul>`;
       nsr1yes = true;
