@@ -113,7 +113,10 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
         <li>Treat reversible causes</li>
       </ul>`;
       document.querySelector('.ar7').innerHTML = `↓`;
-      document.querySelector('.nsr3').innerHTML = ``;
+      document.querySelector('.nsr3').innerHTML = `<p>Rhythm Shockable?</p>
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <button class="algorythm-button nsr4-yes" style="margin-right: 20px;">Yes</button>
+        <button class="algorythm-button nsr4-no">No</button>`;
       nsr1yes = true;
     } else {
       document.querySelector('.ar5').innerHTML = ``;
