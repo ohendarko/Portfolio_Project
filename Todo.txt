@@ -10,6 +10,7 @@ General
   5. Fix up hompage
     ***Make all buttons interactive, link topic buttons to underconstruction.html.
     ***Investigate using apis to get the latest medical news on the page.
+  6. Fix up README.
 
 Major Additions/Updates incoming
 a. Quiz cards
