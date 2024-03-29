@@ -302,6 +302,21 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
             status_yes6 = false;
           }
         });
+        document.querySelector('.sr5-yes').addEventListener('click', () => {
+          if (!status_yes6) {
+            document.querySelector('.ar11').innerHTML = `↓`;
+            document.querySelector('.thirteen').innerHTML = `
+            <ul>
+              <li>Go to post-cardiac arrest care</li>
+            </ul>
+            <p>Consider appropriateness of continued rescuscitation</p>`;
+            status_yes6 = true;
+          } else {
+            document.querySelector('.ar11').innerHTML = ``;
+            document.querySelector('.thirteen').innerHTML = ``;
+            status_yes6 = false;
+          }
+        });
       });
       //document.querySelector('.ar7').innerHTML = ``;
       //document.querySelector('.sr2').innerHTML = ``;
