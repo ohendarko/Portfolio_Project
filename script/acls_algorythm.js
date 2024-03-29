@@ -3,16 +3,10 @@ let status_on2 = false;
 let status_on3 = false;
 let status_on4 = false;
 //
-shockableArm = document.querySelector('.nsr0-yes-arm').innerHTML;
-nonshockableArm = document.querySelector('.nsr0-no-arm').innerHTML;
+
 //
 document.querySelector('.nsr0-no').addEventListener('click', () => {
-  //
   if (!status_on) {
-    if (shockableArm !== null) {
-      shockableArm = ``;
-    }
-    //
 
     document.querySelector('.nine').innerHTML = `Asystole/PEA`;
     document.querySelector('.ar1').innerHTML = `↓`;
@@ -32,7 +26,7 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
       <button class="algorythm-button nsr1-no">No</button>
     </div>`
     //document.querySelector('.nine').classList.add('asystole');
-    //
+    /*
     document.querySelector('.nine').classList.add('nsr0-no-arm');
     document.querySelector('.ar1').classList.add('nsr0-no-arm');
     document.querySelector('.ar2').classList.add('nsr0-no-arm');
@@ -41,7 +35,12 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
     document.querySelector('.nine-a').classList.add('nsr0-no-arm');
     document.querySelector('.ten').classList.add('nsr0-no-arm');
     document.querySelector('.nsr1').classList.add('nsr0-no-arm');
+    /
     //
+    if (document.querySelector('.nsr0-yes-arm').innerHTML) {
+      document.querySelector('.nsr0-yes-arm').innerHTML = ``;
+    }
+    */
 
     status_on = true;
   } else {
@@ -54,7 +53,7 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
     document.querySelector('.ten').innerHTML = ``;
     document.querySelector('.nsr1').innerHTML = ``;
 
-    //
+    /*
     document.querySelector('.nine').classList.remove('nsr0-no-arm');
     document.querySelector('.ar1').classList.remove('nsr0-no-arm');
     document.querySelector('.ar2').classList.remove('nsr0-no-arm');
@@ -63,7 +62,7 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
     document.querySelector('.nine-a').classList.remove('nsr0-no-arm');
     document.querySelector('.ten').classList.remove('nsr0-no-arm');
     document.querySelector('.nsr1').classList.remove('nsr0-no-arm');
-    //
+    */
     status_on = false;
   }
 
@@ -229,12 +228,7 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
     console.log('yes');
     status_on = false;
   }*/
-  if (!status_yes) {
-    //
-    if (nonshockableArm !== null) {
-      nonshockableArm = ``;
-    }
-    //
+  if (!status_on) {
     document.querySelector('.nine').innerHTML = `VF/pVT`;
     document.querySelector('.ar1').innerHTML = `↓`;
     document.querySelector('.ar2').innerHTML = `↓`;
@@ -249,8 +243,16 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
   <div style="display: flex; justify-content: center; align-items: center;">
     <button class="algorythm-button sr1-yes" style="margin-right: 20px;">Yes</button>
     <button class="algorythm-button sr1-no">No</button>
-  </div>`
-    status_yes = true;
+  </div>`;
+    /*
+      document.querySelector('.nine').classList.add('nsr0-yes-arm');
+      
+  
+      if (document.querySelector('.nsr0-no-arm').innerHTML) {
+        document.querySelector('.nsr0-no-arm').innerHTML = ``;
+      }
+      */
+    status_on = true;
   } else {
     document.querySelector('.nine').innerHTML = ``;
     document.querySelector('.ar1').innerHTML = ``;
@@ -260,7 +262,7 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
     document.querySelector('.nine-A').innerHTML = ``;
     document.querySelector('.ten').innerHTML = ``;
     document.querySelector('.nsr1').innerHTML = ``;
-    status_yes = false;
+    status_on = false;
   }
 
   document.querySelector('.sr1-yes').addEventListener('click', () => {
