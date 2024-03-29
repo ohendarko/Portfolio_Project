@@ -174,6 +174,7 @@ let status_yes3 = false;
 let status_yes4 = false;
 let status_yes5 = false;
 let status_yes6 = false;
+let status_yes7 = false;
 document.querySelector('.nsr0-yes').addEventListener('click', () => {
   /*if (status_on) {
     console.log('yes');
