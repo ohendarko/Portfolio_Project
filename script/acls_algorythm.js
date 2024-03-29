@@ -258,12 +258,6 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
 
       document.querySelector('.sr3-yes').addEventListener('click', () => {
         document.querySelector('.ar8').innerHTML = ``;
-        document.querySelector('.ar5').innerHTML = ``;
-        document.querySelector('.ar6').innerHTML = ``;
-        document.querySelector('.ar7').innerHTML = ``;
-        document.querySelector('.fiveb').innerHTML = ``;
-        document.querySelector('.tenb').innerHTML = ``;
-        document.querySelector('.sr2').innerHTML = ``;
         document.querySelector('.twelveb').innerHTML = ``;
         document.querySelector('.ar9').innerHTML = ``;
         document.querySelector('.sr4').innerHTML = ``;
