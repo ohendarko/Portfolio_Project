@@ -172,6 +172,7 @@ let status_yes = false;
 let status_yes2 = false;
 let status_yes3 = false;
 let status_yes4 = false;
+let status_yes5 = false;
 document.querySelector('.nsr0-yes').addEventListener('click', () => {
   /*if (status_on) {
     console.log('yes');
@@ -264,7 +265,27 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
       });
 
       document.querySelector('.sr3-no').addEventListener('click', () => {
-
+        if (!status_yes3) {
+          document.querySelector('.ar10').innerHTML = `↓`;
+          document.querySelector('.sr5').innerHTML = `<p>CPR 2 min</p>
+        <ul>
+          <li><strong>Amiodarone</strong> or <strong>Lidocaine</strong></li>
+          <li>Treat reversible causes</li>
+        </ul>`;
+          document.querySelector('.ar9').innerHTML = `↓`;
+          document.querySelector('.sr4').innerHTML = `<p>Rhythm Shockable?</p>
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <button class="algorythm-button sr3-yes" style="margin-right: 20px;">Yes</button>
+          <button class="algorythm-button sr3-no">No</button>
+        </div>`;
+          status_yes5 = true;
+        } else {
+          document.querySelector('.ar8').innerHTML = ``;
+          document.querySelector('.twelveb').innerHTML = ``;
+          document.querySelector('.ar9').innerHTML = ``;
+          document.querySelector('.sr4').innerHTML = ``;
+          status_yes5 = false;
+        }
       });
       //document.querySelector('.ar7').innerHTML = ``;
       //document.querySelector('.sr2').innerHTML = ``;
