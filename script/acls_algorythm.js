@@ -154,23 +154,16 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
         document.querySelector('.ar8').innerHTML = `↓`;
         document.querySelector('.twelveb').innerHTML = `<p> Are there signs on return of spontaneus circulation (ROSC)?</p>
     <div style="display: flex; justify-content: center; align-items: center;">
-      <button class="algorythm-button nsr3-yes" style="margin-right: 20px;">Yes</button>
-      <button class="algorythm-button nsr3-no">No</button>
+      <button class="algorythm-button nsr5-yes" style="margin-right: 20px;">Yes</button>
+      <button class="algorythm-button nsr5-no">No</button>
     </div>`;
-        document.querySelector('.ar9').innerHTML = `↓`;
-        document.querySelector('.sr4').innerHTML = `<p>CPR 2 min</p>
-    <ul>
-      <li> Consider <strong>Epinephrine</strong>, <strong>Amiodarone</strong> or <strong>Lidocaine</strong></li>
-      <li>Treat reversible causes</li>
-    </ul>`;
         nsr1yes3 = true;
       } else {
         document.querySelector('.ar8').innerHTML = ``;
         document.querySelector('.twelveb').innerHTML = ``;
-        document.querySelector('.ar9').innerHTML = ``;
-        document.querySelector('.sr4').innerHTML = ``;
         nsr1yes3 = false;
       }
+
     });
   });
 });
