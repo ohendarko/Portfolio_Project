@@ -90,7 +90,22 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
           <ul>
             <li>Treat reversible causes</li>
           </ul>
+          <p>Consider appropriateness of continued rescuscitation</p>
         </div>`;
+          status_on4 = true;
+        } else {
+          document.querySelector('.ar8').innerHTML = ``;
+          document.querySelector('.twelve').innerHTML = ``;
+          status_on4 = false;
+        }
+      });
+      document.querySelector('.nsr3-yes').addEventListener('click', () => {
+        if (!status_on4) {
+          document.querySelector('.ar8').innerHTML = `↓`;
+          document.querySelector('.twelve').innerHTML = `<ul>
+          <li>Go to post-cardiac arrest care</li>
+        </ul>
+        <p>Consider appropriateness of continued rescuscitation</p>`;
           status_on4 = true;
         } else {
           document.querySelector('.ar8').innerHTML = ``;
@@ -315,6 +330,8 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
             document.querySelector('.ar11').innerHTML = ``;
             document.querySelector('.thirteen').innerHTML = ``;
             status_yes6 = false;
+            //an interesting development
+            /*It seems I dont have to apply different statuses to all*/
           }
         });
       });
