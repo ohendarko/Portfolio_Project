@@ -32,8 +32,16 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
       <button class="algorythm-button nsr1-no">No</button>
     </div>`
     //document.querySelector('.nine').classList.add('asystole');
-
+    //
     document.querySelector('.nine').classList.add('nsr0-no-arm');
+    document.querySelector('.ar1').classList.add('nsr0-no-arm');
+    document.querySelector('.ar2').classList.add('nsr0-no-arm');
+    document.querySelector('.ar3').classList.add('nsr0-no-arm');
+    document.querySelector('.ar4').classList.add('nsr0-no-arm');
+    document.querySelector('.nine-a').classList.add('nsr0-no-arm');
+    document.querySelector('.ten').classList.add('nsr0-no-arm');
+    document.querySelector('.nsr1').classList.add('nsr0-no-arm');
+    //
 
     status_on = true;
   } else {
@@ -45,6 +53,17 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
     document.querySelector('.nine-A').innerHTML = ``;
     document.querySelector('.ten').innerHTML = ``;
     document.querySelector('.nsr1').innerHTML = ``;
+
+    //
+    document.querySelector('.nine').classList.remove('nsr0-no-arm');
+    document.querySelector('.ar1').classList.remove('nsr0-no-arm');
+    document.querySelector('.ar2').classList.remove('nsr0-no-arm');
+    document.querySelector('.ar3').classList.remove('nsr0-no-arm');
+    document.querySelector('.ar4').classList.remove('nsr0-no-arm');
+    document.querySelector('.nine-a').classList.remove('nsr0-no-arm');
+    document.querySelector('.ten').classList.remove('nsr0-no-arm');
+    document.querySelector('.nsr1').classList.remove('nsr0-no-arm');
+    //
     status_on = false;
   }
 
@@ -60,6 +79,8 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
       <div style="display: flex; justify-content: center; align-items: center;">
         <button class="algorythm-button nsr2-yes" style="margin-right: 20px;">Yes</button>
         <button class="algorythm-button nsr2-no">No</button>`;
+
+
       status_on2 = true;
     } else {
       document.querySelector('.ar5').innerHTML = ``;
