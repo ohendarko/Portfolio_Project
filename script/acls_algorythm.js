@@ -242,7 +242,7 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
         <li>Treat reversible causes</li>
       </ul>`;
         document.querySelector('.ar9').innerHTML = `↓`;
-        document.querySelector('.sr3').innerHTML = `<p>Rhythm Shockable?</p>
+        document.querySelector('.sr4').innerHTML = `<p>Rhythm Shockable?</p>
       <div style="display: flex; justify-content: center; align-items: center;">
         <button class="algorythm-button sr3-yes" style="margin-right: 20px;">Yes</button>
         <button class="algorythm-button sr3-no">No</button>
@@ -252,7 +252,7 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
         document.querySelector('.ar8').innerHTML = ``;
         document.querySelector('.twelveb').innerHTML = ``;
         document.querySelector('.ar9').innerHTML = ``;
-        document.querySelector('.sr3').innerHTML = ``;
+        document.querySelector('.sr4').innerHTML = ``;
         status_yes3 = false;
       }
 
@@ -266,7 +266,7 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
         document.querySelector('.sr2').innerHTML = ``;
         document.querySelector('.twelveb').innerHTML = ``;
         document.querySelector('.ar9').innerHTML = ``;
-        document.querySelector('.sr3').innerHTML = ``;
+        document.querySelector('.sr4').innerHTML = ``;
       });
       //document.querySelector('.ar7').innerHTML = ``;
       //document.querySelector('.sr2').innerHTML = ``;
