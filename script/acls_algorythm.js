@@ -372,8 +372,8 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
         });
         document.querySelector('.sr5-yes').addEventListener('click', () => {
           if (!status_yes6) {
-            document.querySelector('.ar11').innerHTML = `↓`;
-            document.querySelector('.thirteen').innerHTML = `
+            document.querySelector('.ar12').innerHTML = `↓`;
+            document.querySelector('.fourteen').innerHTML = `
             <ul>
               <li>Go to post-cardiac arrest care</li>
             </ul>
