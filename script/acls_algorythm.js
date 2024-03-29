@@ -262,6 +262,10 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
         document.querySelector('.ar9').innerHTML = ``;
         document.querySelector('.sr4').innerHTML = ``;
       });
+
+      document.querySelector('.sr3-no').addEventListener('click', () => {
+
+      });
       //document.querySelector('.ar7').innerHTML = ``;
       //document.querySelector('.sr2').innerHTML = ``;
     });
