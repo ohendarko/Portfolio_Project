@@ -173,6 +173,7 @@ let status_yes2 = false;
 let status_yes3 = false;
 let status_yes4 = false;
 let status_yes5 = false;
+let status_yes6 = false;
 document.querySelector('.nsr0-yes').addEventListener('click', () => {
   /*if (status_on) {
     console.log('yes');
@@ -265,27 +266,41 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
       });
 
       document.querySelector('.sr3-no').addEventListener('click', () => {
-        if (!status_yes3) {
+        if (!status_yes5) {
           document.querySelector('.ar10').innerHTML = `↓`;
-          document.querySelector('.sr5').innerHTML = `<p>CPR 2 min</p>
-        <ul>
-          <li><strong>Amiodarone</strong> or <strong>Lidocaine</strong></li>
-          <li>Treat reversible causes</li>
-        </ul>`;
-          document.querySelector('.ar9').innerHTML = `↓`;
-          document.querySelector('.sr4').innerHTML = `<p>Rhythm Shockable?</p>
-        <div style="display: flex; justify-content: center; align-items: center;">
-          <button class="algorythm-button sr3-yes" style="margin-right: 20px;">Yes</button>
-          <button class="algorythm-button sr3-no">No</button>
-        </div>`;
+          document.querySelector('.sr5').innerHTML = `<p> Are there signs on return of spontaneus circulation (ROSC)?</p>
+          <div style="display: flex; justify-content: center; align-items: center;">
+            <button class="algorythm-button sr5-yes" style="margin-right: 20px;">Yes</button>
+            <button class="algorythm-button sr5-no">No</button>
+          </div>`;
           status_yes5 = true;
         } else {
-          document.querySelector('.ar8').innerHTML = ``;
-          document.querySelector('.twelveb').innerHTML = ``;
-          document.querySelector('.ar9').innerHTML = ``;
-          document.querySelector('.sr4').innerHTML = ``;
+          document.querySelector('.ar10').innerHTML = ``;
+          document.querySelector('.sr5').innerHTML = ``;
           status_yes5 = false;
         }
+
+        document.querySelector('.sr5-no').addEventListener('click', () => {
+          if (!status_yes6) {
+            document.querySelector('.ar11').innerHTML = `↓`;
+            document.querySelector('.thirteen').innerHTML = `<p>CPR 2 min</p>
+            <ul>
+              <li>IV/IO Access</li>
+              <li><strong>Epinephrine</strong> 1mg every 3 to 5 mins</li>
+              <li>Consider advanced airway, capnography</li>
+            </ul>
+            <p><strong>OR</strong></p>
+            <ul>
+              <li>Treat reversible causes</li>
+            </ul>
+            <p>Consider appropriateness of continued rescuscitation</p>`;
+            status_yes6 = true;
+          } else {
+            document.querySelector('.ar11').innerHTML = ``;
+            document.querySelector('.thirteen').innerHTML = ``;
+            status_yes6 = false;
+          }
+        });
       });
       //document.querySelector('.ar7').innerHTML = ``;
       //document.querySelector('.sr2').innerHTML = ``;
