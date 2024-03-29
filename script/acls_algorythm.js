@@ -2,8 +2,18 @@ let status_on = false;
 let status_on2 = false;
 let status_on3 = false;
 let status_on4 = false;
+//
+shockableArm = document.querySelector('.nsr0-yes-arm').innerHTML;
+nonshockableArm = document.querySelector('.nsr0-no-arm').innerHTML;
+//
 document.querySelector('.nsr0-no').addEventListener('click', () => {
+  //
   if (!status_on) {
+    if (shockableArm !== null) {
+      shockableArm = ``;
+    }
+    //
+
     document.querySelector('.nine').innerHTML = `Asystole/PEA`;
     document.querySelector('.ar1').innerHTML = `↓`;
     document.querySelector('.ar2').innerHTML = `↓`;
@@ -22,6 +32,9 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
       <button class="algorythm-button nsr1-no">No</button>
     </div>`
     //document.querySelector('.nine').classList.add('asystole');
+
+    document.querySelector('.nine').classList.add('nsr0-no-arm');
+
     status_on = true;
   } else {
     document.querySelector('.nine').innerHTML = ``;
@@ -196,6 +209,11 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
     status_on = false;
   }*/
   if (!status_yes) {
+    //
+    if (nonshockableArm !== null) {
+      nonshockableArm = ``;
+    }
+    //
     document.querySelector('.nine').innerHTML = `VF/pVT`;
     document.querySelector('.ar1').innerHTML = `↓`;
     document.querySelector('.ar2').innerHTML = `↓`;
