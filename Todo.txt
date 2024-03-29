@@ -1,0 +1,16 @@
+Todo:
+acls_algorythm.js
+  1. Remove colours from blank page: 
+      ***remove classes from html and add them with generated html using .classList.add() method.
+  2. Find a way to override branches
+  3. Run more tests
+
+General
+  4. Implement another algorithm with jquery
+  5. Fix up hompage
+    ***Make all buttons interactive, link topic buttons to underconstruction.html.
+    ***Investigate using apis to get the latest medical news on the page.
+
+Major Additions/Updates incoming
+a. Quiz cards
+b. Algorithm settings; navigate boxes one by one to make it more user friendly.
