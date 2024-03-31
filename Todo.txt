@@ -3,7 +3,11 @@ acls_algorythm.js
   1. DONE
   2. Find a way to override branches
   3. Run more tests
-  4. Make it so we know what option we're on
+  4. Make it so we know what option we're 
+
+html
+  1. review checkboxes
+
 
 General
   4. Implement another algorithm with jquery
