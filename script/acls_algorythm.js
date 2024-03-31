@@ -86,6 +86,8 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
       <div style="display: flex; justify-content: center; align-items: center;">
         <button class="algorythm-button nsr2-yes" style="margin-right: 20px;">Yes</button>
         <button class="algorythm-button nsr2-no">No</button>`;
+      document.querySelector('.eleven').classList.add('algorythm-box');
+      document.querySelector('.nsr2').classList.add('shock-box');
 
 
       status_on2 = true;
@@ -94,6 +96,8 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
       document.querySelector('.eleven').innerHTML = ``;
       document.querySelector('.ar6').innerHTML = ``;
       document.querySelector('.nsr2').innerHTML = ``;
+      document.querySelector('.eleven').classList.remove('algorythm-box');
+      document.querySelector('.nsr2').classList.remove('shock-box');
       status_on2 = false;
     }
 
@@ -111,10 +115,12 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
         <li>Consider appropriateness of continued rescuscitation</li>
       </ul>`;
       */
+        document.querySelector('.nsr3').classList.add('shock-box');
         status_on3 = true;
       } else {
         document.querySelector('.ar7').innerHTML = ``;
         document.querySelector('.nsr3').innerHTML = ``;
+        document.querySelector('.nsr3').classList.remove('shock-box');
         status_on3 = false;
       }
 
@@ -133,10 +139,12 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
           </ul>
           <p>Consider appropriateness of continued rescuscitation</p>
         </div>`;
+          document.querySelector('.twelve').classList.add('algorythm-box');
           status_on4 = true;
         } else {
           document.querySelector('.ar8').innerHTML = ``;
           document.querySelector('.twelve').innerHTML = ``;
+          document.querySelector('.twelve').classList.remove('algorythm-box');
           status_on4 = false;
         }
       });
@@ -147,10 +155,12 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
           <li>Go to post-cardiac arrest care</li>
         </ul>
         <p>Consider appropriateness of continued rescuscitation</p>`;
+          document.querySelector('.twelve').classList.add('asystole');
           status_on4 = true;
         } else {
           document.querySelector('.ar8').innerHTML = ``;
           document.querySelector('.twelve').innerHTML = ``;
+          document.querySelector('.twelve').classList.remove('asystole');
           status_on4 = false;
         }
       });
@@ -175,6 +185,8 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
     <div style="display: flex; justify-content: center; align-items: center;">
       <button class="algorythm-button sr4-yes" style="margin-right: 20px;">Yes</button>
       <button class="algorythm-button sr4-no">No</button>`;
+      document.querySelector('.tenb').classList.add('algorythm-box');
+      document.querySelector('.nsr3').classList.add('shock-box');
       nsr1yes = true;
     } else {
       document.querySelector('.ar5').innerHTML = ``;
@@ -183,6 +195,8 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
       document.querySelector('.tenb').innerHTML = ``;
       document.querySelector('.ar7').innerHTML = ``;
       document.querySelector('.nsr3').innerHTML = ``;
+      document.querySelector('.tenb').classList.remove('algorythm-box');
+      document.querySelector('.nsr3').classList.remove('shock-box');
       nsr1yes = false;
     }
 
@@ -196,12 +210,14 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
         <li> Consider <strong>Epinephrine</strong>, <strong>Amiodarone</strong> or <strong>Lidocaine</strong></li>
         <li>Treat reversible causes</li>
       </ul>`;
+        document.querySelector('.sr4').classList.add('algorythm-box');
         nsr1yes2 = true;
       } else {
         document.querySelector('.ar8').innerHTML = ``;
         document.querySelector('.twelveb').innerHTML = ``;
         document.querySelector('.ar9').innerHTML = ``;
         document.querySelector('.sr4').innerHTML = ``;
+        document.querySelector('.sr4').classList.remove('algorythm-box');
         nsr1yes2 = false;
       }
     });
@@ -213,10 +229,12 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
           <button class="algorythm-button nssr5-yes" style="margin-right: 20px;">Yes</button>
           <button class="algorythm-button nssr5-no">No</button>
         </div>`;
+        document.querySelector('.twelveb').classList.add('shock-box');
         nsr1yes3 = true;
       } else {
         document.querySelector('.ar8').innerHTML = ``;
         document.querySelector('.twelveb').innerHTML = ``;
+        document.querySelector('.twelveb').classList.remove('shock-box');
         nsr1yes3 = false;
       }
 
@@ -235,10 +253,12 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
           </ul>
           <p>Consider appropriateness of continued rescuscitation</p>
         </div>`;
+          document.querySelector('.sr4').classList.add('algorythm-box');
           status_on13 = true;
         } else {
           document.querySelector('.ar9').innerHTML = ``;
           document.querySelector('.sr4').innerHTML = ``;
+          document.querySelector('.sr4').classList.remove('algorythm-box');
           status_on13 = false;
         }
       });
@@ -249,10 +269,12 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
           <li>Go to post-cardiac arrest care</li>
         </ul>
         <p>Consider appropriateness of continued rescuscitation</p>`;
+          document.querySelector('.sr4').classList.add('asystole');
           status_on13 = true;
         } else {
           document.querySelector('.ar9').innerHTML = ``;
           document.querySelector('.sr4').innerHTML = ``;
+          document.querySelector('.sr4').classList.remove('asystole');
           status_on13 = false;
         }
       });
