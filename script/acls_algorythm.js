@@ -496,10 +496,12 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
         <li>Consider appropriateness of continued rescuscitation</li>
       </ul>`;
       */
+        document.querySelector('.twelveb').classList.add('shock-box');
         astatus_yes8 = true;
       } else {
         document.querySelector('.ar8').innerHTML = ``;
         document.querySelector('.twelveb').innerHTML = ``;
+        document.querySelector('.twelveb').classList.remove('shock-box');
         astatus_yes8 = false;
       }
 
@@ -518,10 +520,12 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
           </ul>
           <p>Consider appropriateness of continued rescuscitation</p>
         </div>`;
+          document.querySelector('.sr4').classList.add('algorythm-box');
           astatus_yes9 = true;
         } else {
           document.querySelector('.ar9').innerHTML = ``;
           document.querySelector('.sr4').innerHTML = ``;
+          document.querySelector('.sr4').classList.remove('algorythm-box');
           astatus_yes9 = false;
         }
       });
@@ -532,10 +536,12 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
           <li>Go to post-cardiac arrest care</li>
         </ul>
         <p>Consider appropriateness of continued rescuscitation</p>`;
+          document.querySelector('.sr4').classList.add('asystole');
           astatus_yes10 = true;
         } else {
           document.querySelector('.ar9').innerHTML = ``;
           document.querySelector('.sr4').innerHTML = ``;
+          document.querySelector('.sr4').classList.remove('asystole');
           astatus_yes10 = false;
         }
       });
@@ -556,10 +562,12 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
       <li>Consider appropriateness of continued rescuscitation</li>
     </ul>`;
     */
+      document.querySelector('.fiveb').classList.add('shock-box');
       status_yes8 = true;
     } else {
       document.querySelector('.ar5').innerHTML = ``;
       document.querySelector('.fiveb').innerHTML = ``;
+      document.querySelector('.fiveb').classList.remove('shock-box');
       status_yes8 = false;
     }
 
@@ -578,10 +586,12 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
         </ul>
         <p>Consider appropriateness of continued rescuscitation</p>
       </div>`;
+        document.querySelector('.tenb').classList.add('algorythm-box');
         status_yes9 = true;
       } else {
         document.querySelector('.ar6').innerHTML = ``;
         document.querySelector('.tenb').innerHTML = ``;
+        document.querySelector('.tenb').classList.remove('algorythm-box');
         status_yes9 = false;
       }
     });
@@ -592,10 +602,12 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
         <li>Go to post-cardiac arrest care</li>
       </ul>
       <p>Consider appropriateness of continued rescuscitation</p>`;
+        document.querySelector('.tenb').classList.add('asystole');
         status_yes10 = true;
       } else {
         document.querySelector('.ar6').innerHTML = ``;
         document.querySelector('.tenb').innerHTML = ``;
+        document.querySelector('.tenb').classList.remove('asystole');
         status_yes10 = false;
       }
     });
