@@ -9,7 +9,7 @@ General
   4. Implement another algorithm with jquery
   5. Fix up hompage
     ***Make all buttons interactive, link topic buttons to underconstruction.html.
-    ***Investigate using apis to get the latest medical news on the page.
+    ***Investigate using apis to get the latest medical news on the page.--- in sequence
   6. Fix up README.
 
 Major Additions/Updates incoming
