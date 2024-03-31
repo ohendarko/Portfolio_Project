@@ -512,3 +512,12 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
   });
 
 });
+
+/**
+ * Todo: 
+  * Remove colours from blank page: 
+      ***remove classes from html and add them with generated html using .classList.add() method.
+  * Find a way to override branches
+  * Implement another algorithm with jquery
+  * Run more tests
+ */
