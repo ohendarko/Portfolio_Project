@@ -58,3 +58,11 @@ body {
   font-size: 25px;
   border-width: 0px !important;
 }
+
+.container a:hover {
+  border-radius: 1cap;
+  background-color: gray;
+  opacity: 1;
+  color: white !important;
+  padding: 7px;
+}
