@@ -27,7 +27,10 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
       <button class="algorythm-button nsr1-yes" style="margin-right: 20px;">Yes</button>
       <button class="algorythm-button nsr1-no">No</button>
     </div>`
-    //document.querySelector('.nine').classList.add('asystole');
+    document.querySelector('.nine').classList.add('asystole');
+    document.querySelector('.ten').classList.add('algorythm-box');
+    document.querySelector('.nsr1').classList.add('shock-box');
+
     /*
     document.querySelector('.nine').classList.add('nsr0-no-arm');
     document.querySelector('.ar1').classList.add('nsr0-no-arm');
@@ -54,6 +57,9 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
     document.querySelector('.nine-A').innerHTML = ``;
     document.querySelector('.ten').innerHTML = ``;
     document.querySelector('.nsr1').innerHTML = ``;
+    document.querySelector('.nine').classList.remove('asystole');
+    document.querySelector('.ten').classList.remove('algorythm-box');
+    document.querySelector('.nsr1').classList.remove('shock-box');
 
     /*
     document.querySelector('.nine').classList.remove('nsr0-no-arm');
