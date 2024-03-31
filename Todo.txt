@@ -4,7 +4,7 @@ acls_algorythm.js
       ***remove classes from html and add them with generated html using .classList.add() method.
   2. Find a way to override branches
   3. Run more tests
-  4. Make is so we know what option we're on
+  4. Make it so we know what option we're on
 
 General
   4. Implement another algorithm with jquery
