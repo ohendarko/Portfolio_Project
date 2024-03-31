@@ -2,11 +2,12 @@ let status_on = false;
 let status_on2 = false;
 let status_on3 = false;
 let status_on4 = false;
+let status_on13 = false;
 //
 
 //
 document.querySelector('.nsr0-no').addEventListener('click', () => {
-  document.querySelector('.nsr0-yes-arm').innerHTML = ``;
+  /*document.querySelector('.nsr0-yes-arm').innerHTML = ``;*/
   if (!status_on) {
 
     document.querySelector('.nine').innerHTML = `Asystole/PEA`;
@@ -202,16 +203,53 @@ document.querySelector('.nsr0-no').addEventListener('click', () => {
       if (!nsr1yes3) {
         document.querySelector('.ar8').innerHTML = `↓`;
         document.querySelector('.twelveb').innerHTML = `<p> Are there signs on return of spontaneus circulation (ROSC)?</p>
-    <div style="display: flex; justify-content: center; align-items: center;">
-      <button class="algorythm-button nsr5-yes" style="margin-right: 20px;">Yes</button>
-      <button class="algorythm-button nsr5-no">No</button>
-    </div>`;
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <button class="algorythm-button nssr5-yes" style="margin-right: 20px;">Yes</button>
+          <button class="algorythm-button nssr5-no">No</button>
+        </div>`;
         nsr1yes3 = true;
       } else {
         document.querySelector('.ar8').innerHTML = ``;
         document.querySelector('.twelveb').innerHTML = ``;
         nsr1yes3 = false;
       }
+
+      document.querySelector('.nssr5-no').addEventListener('click', () => {
+        if (!status_on13) {
+          document.querySelector('.ar9').innerHTML = `↓`;
+          document.querySelector('.sr4').innerHTML = `<p>CPR 2 min</p>
+          <ul>
+            <li>IV/IO Access</li>
+            <li><strong>Epinephrine</strong> 1mg every 3 to 5 mins</li>
+            <li>Consider advanced airway, capnography</li>
+          </ul>
+          <p><strong>OR</strong></p>
+          <ul>
+            <li>Treat reversible causes</li>
+          </ul>
+          <p>Consider appropriateness of continued rescuscitation</p>
+        </div>`;
+          status_on13 = true;
+        } else {
+          document.querySelector('.ar9').innerHTML = ``;
+          document.querySelector('.sr4').innerHTML = ``;
+          status_on13 = false;
+        }
+      });
+      document.querySelector('.nssr5-yes').addEventListener('click', () => {
+        if (!status_on13) {
+          document.querySelector('.ar9').innerHTML = `↓`;
+          document.querySelector('.sr4').innerHTML = `<ul>
+          <li>Go to post-cardiac arrest care</li>
+        </ul>
+        <p>Consider appropriateness of continued rescuscitation</p>`;
+          status_on13 = true;
+        } else {
+          document.querySelector('.ar9').innerHTML = ``;
+          document.querySelector('.sr4').innerHTML = ``;
+          status_on13 = false;
+        }
+      });
 
     });
   });
@@ -235,7 +273,7 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
     console.log('yes');
     status_on = false;
   }*/
-  document.querySelector('.nsr0-no-arm').innerHTML = ``;
+  /* document.querySelector('.nsr0-no-arm').innerHTML = ``;*/
   if (!status_on) {
     document.querySelector('.nine').innerHTML = `VF/pVT`;
     document.querySelector('.ar1').innerHTML = `↓`;
@@ -382,8 +420,8 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
             <p>Consider appropriateness of continued rescuscitation</p>`;
             status_yes6 = true;
           } else {
-            document.querySelector('.ar11').innerHTML = ``;
-            document.querySelector('.thirteen').innerHTML = ``;
+            document.querySelector('.ar12').innerHTML = ``;
+            document.querySelector('.fourteen').innerHTML = ``;
             status_yes6 = false;
             //an interesting development
             /*It seems I dont have to apply different statuses to all*/
