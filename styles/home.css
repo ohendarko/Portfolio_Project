@@ -13,12 +13,15 @@ body {
   text-align: center;
   cursor: pointer;
   /*border-bottom: 0.5px solid rgb(183, 178, 178);*/
-  font-size: 18px;
+  font-size: 20px;
   font-weight: normal;
+  padding: 10px;
 }
 
 .top-line-member:hover {
-  color: green;
+  color: white;
+  background-color: gray;
+  border-radius: 1cap;
 }
 
 .top-line {

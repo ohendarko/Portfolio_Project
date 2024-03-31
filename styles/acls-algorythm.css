@@ -1,5 +1,5 @@
 body {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .algorythm-box {
@@ -47,12 +47,14 @@ body {
   border-radius: 0.5cap;
   border-width: 0.5px;
   cursor: pointer;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .algorythm-button:hover {
   padding: 7px 17px 7px 17px;
   background-color: orange;
   color: white;
-  font-size: 15px;
+  font-size: 25px;
   border-width: 0px !important;
 }
