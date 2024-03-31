@@ -318,6 +318,9 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
     <button class="algorythm-button sr1-yes" style="margin-right: 20px;">Yes</button>
     <button class="algorythm-button sr1-no">No</button>
   </div>`;
+    document.querySelector('.nine').classList.add('asystole');
+    document.querySelector('.ten').classList.add('algorythm-box');
+    document.querySelector('.sr1').classList.add('shock-box');
     /*
       document.querySelector('.nine').classList.add('nsr0-yes-arm');
       
@@ -336,6 +339,9 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
     document.querySelector('.nine-A').innerHTML = ``;
     document.querySelector('.ten').innerHTML = ``;
     document.querySelector('.nsr1').innerHTML = ``;
+    document.querySelector('.nine').classList.remove('asystole');
+    document.querySelector('.ten').classList.remove('algorythm-box');
+    document.querySelector('.sr1').classList.remove('shock-box');
     status_on = false;
   }
 
@@ -355,6 +361,8 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
       <button class="algorythm-button sr2-yes" style="margin-right: 20px;">Yes</button>
       <button class="algorythm-button sr2-no">No</button>
     </div>`;
+      document.querySelector('.tenn').classList.add('algorythm-box');
+      document.querySelector('.sr2').classList.add('shock-box');
       status_yes2 = true;
     } else {
       document.querySelector('.ar5').innerHTML = ``;
@@ -363,6 +371,8 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
       document.querySelector('.tenn').innerHTML = ``;
       document.querySelector('.ar7').innerHTML = ``;
       document.querySelector('.sr2').innerHTML = ``;
+      document.querySelector('.tenn').classList.remove('algorythm-box');
+      document.querySelector('.sr2').classList.remove('shock-box');
       status_yes2 = false;
     }
 
@@ -382,6 +392,8 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
         <button class="algorythm-button sr3-yes" style="margin-right: 20px;">Yes</button>
         <button class="algorythm-button sr3-no">No</button>
       </div>`;
+        document.querySelector('.sr4').classList.add('algorythm-box');
+        document.querySelector('.sr5').classList.add('shock-box');
         status_yes3 = true;
       } else {
         document.querySelector('.ar8').innerHTML = ``;
@@ -390,6 +402,8 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
         document.querySelector('.ar10').innerHTML = ``;
         document.querySelector('.sr4').innerHTML = ``;
         document.querySelector('.sr5').innerHTML = ``;
+        document.querySelector('.sr4').classList.remove('algorythm-box');
+        document.querySelector('.sr5').classList.remove('shock-box');
         status_yes3 = false;
       }
 
@@ -400,6 +414,8 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
         document.querySelector('.sr4').innerHTML = ``;
         document.querySelector('.ar10').innerHTML = ``;
         document.querySelector('.sr5').innerHTML = ``;
+        document.querySelector('.sr4').classList.remove('algorythm-box');
+        document.querySelector('.sr5').classList.remove('shock-box');
       });
 
       document.querySelector('.sr3-no').addEventListener('click', () => {
@@ -410,10 +426,12 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
             <button class="algorythm-button sr5-yes" style="margin-right: 20px;">Yes</button>
             <button class="algorythm-button sr5-no">No</button>
           </div>`;
+          document.querySelector('.thirteen').classList.add('shock-box');
           status_yes5 = true;
         } else {
           document.querySelector('.ar11').innerHTML = ``;
           document.querySelector('.thirteen').innerHTML = ``;
+          document.querySelector('.thirteen').classList.remove('shock-box');
           status_yes5 = false;
         }
 
@@ -432,9 +450,11 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
             </ul>
             <p>Consider appropriateness of continued rescuscitation</p>`;
             status_yes6 = true;
+            document.querySelector('.fourteen').classList.add('algorythm-box');
           } else {
             document.querySelector('.ar12').innerHTML = ``;
             document.querySelector('.fourteen').innerHTML = ``;
+            document.querySelector('.fourteen').classList.remove('algorythm-box');
             status_yes6 = false;
           }
         });
@@ -447,9 +467,11 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
             </ul>
             <p>Consider appropriateness of continued rescuscitation</p>`;
             status_yes6 = true;
+            document.querySelector('.fourteen').classList.add('asystole');
           } else {
             document.querySelector('.ar12').innerHTML = ``;
             document.querySelector('.fourteen').innerHTML = ``;
+            document.querySelector('.fourteen').classList.remove('asystole');
             status_yes6 = false;
             //an interesting development
             /*It seems I dont have to apply different statuses to all*/
