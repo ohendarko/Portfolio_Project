@@ -6,6 +6,7 @@ let status_on4 = false;
 
 //
 document.querySelector('.nsr0-no').addEventListener('click', () => {
+  document.querySelector('.nsr0-yes-arm').innerHTML = ``;
   if (!status_on) {
 
     document.querySelector('.nine').innerHTML = `Asystole/PEA`;
@@ -234,6 +235,7 @@ document.querySelector('.nsr0-yes').addEventListener('click', () => {
     console.log('yes');
     status_on = false;
   }*/
+  document.querySelector('.nsr0-no-arm').innerHTML = ``;
   if (!status_on) {
     document.querySelector('.nine').innerHTML = `VF/pVT`;
     document.querySelector('.ar1').innerHTML = `↓`;
