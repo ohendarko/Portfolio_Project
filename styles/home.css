@@ -28,7 +28,7 @@ body {
 .top-line {
   display: grid;
   width: 100%;
-  grid-template-columns: 450px 100px 100px 100px 100px 100px 100px !important;
+  grid-template-columns: 450px 100px 120px 120px 120px 120px 100px !important;
   align-self: center;
   align-items: center;
   /*left: 50%;
