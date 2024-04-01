@@ -83,6 +83,32 @@ body {
   font-size: 40px;
 }
 
+.news {
+  max-height: 600px;
+  /* Set the maximum height of the news div */
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+  border: 1px solid #ccccccba;
+  /* Optional: Add border for clarity */
+  padding: 10px;
+  /* Optional: Add padding for better appearance */
+  display: none;
+  /* Hide the news div by default */
+}
+
+h5 {
+  color: rgb(17, 7, 75);
+}
+
+.news p {
+  color: rgb(46, 46, 121);
+}
+
+.news a {
+  color: black !important;
+}
+
+
 .custom-popover {
   max-height: 600px;
   /* Set the maximum width of the popover */
