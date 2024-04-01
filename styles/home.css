@@ -92,20 +92,23 @@ body {
   /* Set the maximum height of the news div */
   overflow-y: auto;
   /* Enable vertical scrolling */
-  border: 1px solid #ccccccba;
+  border: 1px solid #052e7f33;
   /* Optional: Add border for clarity */
   padding: 10px;
   /* Optional: Add padding for better appearance */
   display: none;
   /* Hide the news div by default */
+  border-radius: 1cap;
 }
 
 h5 {
-  color: rgb(17, 7, 75);
+  color: rgb(35, 15, 146);
+  font-size: 24px !important;
 }
 
 .news p {
   color: rgb(46, 46, 121);
+  font-size: 18px;
 }
 
 .news a {
