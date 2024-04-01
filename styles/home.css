@@ -51,7 +51,7 @@ body {
   align-items: center;
 }
 
-.Mastered:hover {
+.News:hover {
   background-color: orange;
   color: white;
 }
@@ -203,7 +203,12 @@ a:visited {
 }
 
 .bls {
-  padding: 30px;
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.bls {
+  padding: 20px;
 }
 
 .btn {
