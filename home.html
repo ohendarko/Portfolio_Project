@@ -6,11 +6,15 @@
   <title>MedAlgorythms</title>
   <link rel="stylesheet" href="styles/home.css">
   <link rel="icon" href="">
+  <script src="script/getnews.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
     <div class="top-line">
       <div><h1 style="color: green;">MedAlgorythms</h1></div>
+      <div></div>
       <div class="top-line-member">History</div>
       <div class="top-line-member">Run New</div>
       <div class="top-line-member">Repeat Previous</div>
@@ -25,10 +29,12 @@
     <p class="catchphrase-paragraph">Become a master</p>
   </div>
 
-  <div class="container">
-    <div class="display-menu">
+  <div class="container" style="height: 200px;">
+    <div class="display-menu" style="height: 150px;">
       <div class="updates">Updates</div>
-      <div>What's new? - March 20, 2024</div>
+      <div><button type="button" class="btn btn-primary" data-toggle="popover" title="Latest News" data-placement="bottom" data-html="true" data-content="">
+        Latest Health News
+      </button></div>
       <div class="menu-container">
         <button class="menu Search">Search</button>
         <button class="menu">A-Z</button>
@@ -128,6 +134,7 @@
     width: 100%;
     height: 40px;"> <div style="width: 100px;
     margin-left: auto; cursor: pointer;">Report</div></div>
+  <p style="opacity: 0.4; margin-left: 100px;">&copy; 2024 Ohene Darko. All rights reserved</p>
   
 </body>
 </html>

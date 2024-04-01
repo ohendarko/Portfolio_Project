@@ -26,8 +26,8 @@ body {
 
 .top-line {
   display: grid;
-  width: 70%;
-  grid-template-columns: minmax(300px, 1550px) 100px 100px 100px 100px 100px;
+  width: 100%;
+  grid-template-columns: 450px 100px 100px 100px 100px 100px 110px !important;
   align-self: center;
   align-items: center;
   /*left: 50%;
@@ -81,6 +81,7 @@ body {
 
 .updates {
   font-size: 40px;
+  margin-right: 40px !important;
 }
 
 .menu {
