@@ -16,6 +16,7 @@ body {
   font-size: 20px;
   font-weight: normal;
   padding: 10px;
+  justify-content: center;
 }
 
 .top-line-member:hover {
@@ -36,15 +37,17 @@ body {
   position: relative;
 }
 
-.Mastered {
+.News {
   text-align: center;
-  background-color: green;
+  background-color: rgb(128, 28, 0);
   color: white;
   padding-left: 5px;
   padding-right: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 1cap;
+  justify-content: center;
+  align-items: center;
 }
 
 .Mastered:hover {
