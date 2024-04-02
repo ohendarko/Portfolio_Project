@@ -19,6 +19,7 @@ Create the Calculators page
     ***Make all buttons interactive, link topic buttons to underconstruction.html.
     ***Investigate using apis to get the latest medical news on the page.--- in sequence
   6. Fix up README.
+  7. Add icons
 
 Major Additions/Updates incoming
 a. Quiz cards
