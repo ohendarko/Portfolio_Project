@@ -2,6 +2,11 @@ body {
   font-family: 'Times New Roman', Times, serif;
 }
 
+header {
+  background-color: rgb(113, 112, 112);
+  width: 100%;
+}
+
 .container {
   display: grid;
   place-items: center;
