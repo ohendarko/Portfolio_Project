@@ -4,7 +4,7 @@ body {
 
 header {
   background-color: rgb(33, 31, 31);
-  width: 100%;
+  width: 100% !important;
 }
 
 .container {
