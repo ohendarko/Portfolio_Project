@@ -3,7 +3,7 @@ body {
 }
 
 header {
-  background-color: rgb(113, 112, 112);
+  background-color: rgb(33, 31, 31);
   width: 100%;
 }
 
@@ -22,6 +22,7 @@ header {
   font-weight: normal;
   padding: 10px;
   justify-content: center;
+  color: white;
 }
 
 .top-line-member:hover {
