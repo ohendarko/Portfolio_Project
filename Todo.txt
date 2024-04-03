@@ -7,6 +7,7 @@ acls_algorythm.js
 
 html
   1. review checkboxes
+  2. Add a quick acess text for the homepage
 
 
 General
