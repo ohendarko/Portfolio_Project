@@ -1,0 +1,26 @@
+.calc-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* Display five news items per column */
+  gap: 20px;
+  /* Adjust gap between news items as needed */
+  margin: 15px;
+  /* Center the news container horizontally */
+  width: 100%
+    /* Set a maximum width for the news container */
+    padding: 0 20px;
+  /* Add padding to the left and right of the news container */
+}
+
+.calc-item {
+  background-color: #073e6b;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Additional styling for news items */
+}
+
+.red {
+  color: rgb(235, 88, 88);
+}

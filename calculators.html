@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="styles/home.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-  <script src="script/news3.js"></script>
   <link rel="stylesheet" href="styles/news3.css">
   <script src="script/calculators.js"></script>
+  <link rel="stylesheet" href="styles/calculators.css">
 </head>
 <body>
   <header class="fixed-header">
@@ -26,17 +26,16 @@
       </div>
     </div>
   </header>
-  <div class="calc-container" style="margin-top: 100px !important; margin: 20px;">
-    <p><strong>QUICK ACCESS</strong></p>
-    <div class="bmi">
+  <p style="margin-top: 100px !important; margin: 20px;"><strong>QUICK ACCESS</strong></p>
+  <div class="calc-container" style="margin: 20px;">
+    <div class="bmi calc-item">
       <p>BMI</p>
       Weight: <input class="weight" placeholder="(kg)" type="text">
-    
-    Height: <input class="height" placeholder="(sq.meter)" type="text">
-    <button class="calculatebmi" onclick="
-      calculatebmi();
-    ">Calculate</button>
-    <p class="total-bmi" style="margin-top: 10px;"><!-- Answer will be placed dynamically here--></p>
+      Height: <input class="height" placeholder="(sq.meter)" type="text" onkeydown="handlebmiKeydown(event)">
+      <p style="margin-top: 10px;">
+      <button class="calculatebmi" onclick="calculatebmi();
+      ">Calculate</button></p>
+      <p class="total-bmi" style="margin-top: 10px;"><!-- Answer will be placed dynamically here--></p>
     </div>
   </div>
   <div class="container">
