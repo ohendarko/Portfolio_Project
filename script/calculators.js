@@ -10,7 +10,8 @@ function calculatebmi() {
   let weight = Number(inputElementWeight.value);
   let height = Number(inputElementHeight.value);
 
-  let BMI = weight / (height * height);
+  let bmi = weight / (height * height);
+  let BMI = bmi.toFixed(2);
 
-  document.querySelector('.total-bmi').innerHTML = `$${BMI}`;
+  document.querySelector('.total-bmi').innerHTML = `BMI = ${BMI} kg/sq.m`;
 }
