@@ -4,8 +4,8 @@ function handleCostKeydown(event) {
   }
 }
 
-function calculateTotal() {
-  const inputElement = document.querySelector('.js-cost-input');
+function calculatebmi() {
+  const inputElementWeight = document.querySelector('.js-cost-input');
   let cost = Number(inputElement.value);
 
   if (cost < 40) {
