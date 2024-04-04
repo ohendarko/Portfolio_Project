@@ -9,6 +9,10 @@ html
   1. review checkboxes
   2. Add a quick acess text for the homepage
 
+calculators.html
+add buttons/feature that can change number of decimal places
+button or drop down list of decimal places to choose from
+
 
 General
 Make a bigger news page
