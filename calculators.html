@@ -25,11 +25,15 @@
       </div>
     </div>
   </header>
-  <div class="calc-container" style="margin-top: 100px;">
+  <div class="calc-container" style="margin-top: 100px !important; margin: 20px;">
     <div class="bmi">
+      <p>BMI</p>
       <input class="weight" placeholder="Weight(kg)" type="text">
     
     <input class="height" placeholder="Height(sq.meter)" type="text">
+    <button class="calculatebmi" onclick="
+      calculatebmi();
+    ">Calculate</button>
     <p class="total-bmi"><!-- Answer will be placed dynamically here--></p>
     </div>
   </div>
