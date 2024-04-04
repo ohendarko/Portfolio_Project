@@ -5,12 +5,12 @@ function handleCostKeydown(event) {
 }
 
 function calculatebmi() {
-  const inputElementWeight = document.querySelector('.js-cost-input');
-  let cost = Number(inputElement.value);
+  const inputElementWeight = document.querySelector('.weight');
+  const inputElementHeight = document.querySelector('.height');
+  let weight = Number(inputElementWeight.value);
+  let height = Number(inputElementHeight.value);
 
-  if (cost < 40) {
-    cost += 10;
-  }
-  document.querySelector('.js-total-cost').innerHTML = `$${cost}`;
+  let BMI = weight / (height * height);
+
+  document.querySelector('.total-bmi').innerHTML = `$${BMI}`;
 }
-
