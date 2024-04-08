@@ -24,5 +24,10 @@ def calculators():
     return render_template('calculators.html')
 
 
+@app.route("/under_construction")
+def under_construction()
+    return render_template('under_construction.html')
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
