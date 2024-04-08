@@ -13,10 +13,12 @@ def home():
 def acls_algorithm():
     return render_template('acls_algorythm.html')
 
-app.route("/news")
-## def...
-# render template
 
-app.route("/calculators")
-## def...
-# render template
+@app.route("/news")
+def news():
+    return render_template('news.html')
+
+
+@app.route("/calculators")
+def calculators():
+    return render_template('calculators.html')
