@@ -7,7 +7,7 @@ acls_algorythm.js
 
 html
   1. review checkboxes
-  2. Add a quick acess text for the homepage
+  2. Add a quick access text for the homepage - Done
 
 calculators.html
 add buttons/feature that can change number of decimal places
@@ -16,21 +16,21 @@ Drug Dose per weight calculations
 
 
 General
-Make a bigger news page
-Create a landing page
-Create the Calculators page
+DONE Make a bigger news page --done
+DONE Create a landing page --done
+DONE Create the Calculators page --done
 
   4. Implement another algorithm with jquery
   5. Fix up hompage
     ***Make all buttons interactive, link topic buttons to underconstruction.html.
-    ***Investigate using apis to get the latest medical news on the page.--- in sequence
+    ***DONE Investigate using apis to get the latest medical news on the page.--- done
   6. Fix up README.
   7. Add icons
-  8. Work with flask
+  8. Work with flask --in sequence
 
 Major Additions/Updates incoming
 a. Quiz cards
 b. Algorithm settings; navigate boxes one by one to make it more user friendly.
-c. Calculators; BMI, CrCl, ASCVD risk
+c. Calculators; BMI, CrCl, ASCVD risk --in sequence
 d. Dose reminders
 e. Medicine Index

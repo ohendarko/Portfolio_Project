@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedAlgorythms</title>
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="icon" href="">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script/getnews.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <div class="header-placeholder"></div>
+  <header class="fixed-header">
+    <div class="container">
+      <div class="top-line">
+        <div><h1 style="color: rgb(101, 238, 101);">MedAlgorythms</h1></div>
+        <div></div>
+        <div class="top-line-member">Tutorial</div>
+        <div class="top-line-member"></div>
+        <div class="top-line-member"><a href="calculators.html"></a></div>
+        <div class="top-line-member" style=" margin-right: 20px;">Drug Index</div>
+        <div class="top-line-member News"><a href="news.html" style="text-decoration: none;" title="See more news here">News</a></div> 
+      </div>
+    </div>
+  </header>
+
+  <div class="catchphrase">
+    <p class="catchphrase-paragraph">Double check, Learn</p>
+    <p class="catchphrase-paragraph"> Gain experience</p>
+    <p class="catchphrase-paragraph">Become a master</p>
+  </div>
+
+  <div class="container">
+    <div class="display-menu">
+      <div class="updates">Updates</div>
+      <div><button type="button" class="btn btn-primary" onclick="toggleNews()" title="Click to hide or see news below">
+        Latest Health News
+      </button></div>
+      <div class="menu-container">
+        <button class="menu Search">Search</button>
+        <button class="menu"></button>
+        <button class="menu">View</button> <!--This is intended to change how cards appear on the page. Whether 3 per column, color of cards, etc-->
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  <div class="container">
+    <div class="news">
+      <!--News articles will be placed here-->
+    </div>
+  </div>
+  
+  <hr>
+
+  <p style="font-weight: bold;
+            margin-left: 250px;
+            font-size: larger;
+            margin-bottom: 0px;">QUICK ACCESS</p>
+  
+  <div class="container algorithms-container">
+    <div class="algorithms">
+      <div>
+        <button class="select-algorithm"><a href="under_construction.html" class="bls">BLS Algorythm</a></button>
+      </div>
+      <div>
+        <button class="select-algorithm"><a href="acls_algorythm.html" class="bls">ACLS Algorythm</a></button>
+      </div>
+      <div>
+        <button class="select-algorithm">Bradycardia Algorythm</button>
+      </div>
+      <div>
+        <button class="select-algorithm">Cardiac Arrest Algorythm</button>
+      </div>
+    </div>
+  </div>
+
+  <p style="font-weight: bold;
+            margin-left: 250px;
+            font-size: larger;
+            margin-bottom: 0px;">IN PROGRESS</p>
+  
+  <div class="container algorithms-container" style="margin-top: 0px;">
+    <div class="algorithms" style="margin-top: 20px;">
+      <div>
+        <button class="select-algorithm2">Gestational Hypertension</button>
+      </div>
+      <div>
+        <button class="select-algorithm2">Chronic HPT in Pregnancy</button>
+      </div>
+      <div>
+        <button class="select-algorithm2">Pre-Eclampsia</button>
+      </div>
+      <div>
+        <button class="select-algorithm2">Eclampsia</button>
+      </div>
+    </div>
+  </div>
+
+  <p style="font-weight: bold;
+            margin-left: 250px;
+            font-size: larger;
+            margin-bottom: 0px;">ACCESS MORE</p>
+  
+  <div class="container algorithms-container" style="margin-top: 0px; margin-bottom: 40px;">
+    <div class="algorithms" style="margin-top: 20px; margin-bottom: 0px;">
+      <div>
+        <button class="select-algorithm">Oncology</button>
+      </div>
+      <div>
+        <button class="select-algorithm">RVI</button>
+      </div>
+      <div>
+        <button class="select-algorithm">Poisoning</button>
+      </div>
+      <div>
+        <button class="select-algorithm">Stroke</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container algorithms-container" style="margin-top: 0px; margin-bottom: 40px;">
+    <div class="algorithms" style="margin-top: 0px; margin-bottom: 0px;">
+      <div>
+        <button class="select-algorithm">Renal Failure</button>
+      </div>
+      <div>
+        <button class="select-algorithm">DIC</button>
+      </div>
+      <div>
+        <button class="select-algorithm">Atrial Fibrillation</button>
+      </div>
+      <div>
+        <button class="select-algorithm">Electrolytes</button>
+      </div>
+    </div>
+  </div>
+  <div style="height: 500px;"></div>
+  <div class="container">
+    <p style="margin-left: 20px; opacity: 0.5;">Disclaimer:</p>
+    <p style="margin-left: 20px; opacity: 0.5; overflow-x: unset;">
+    This is only meant to serve as support and not intended to replace or override clinical judgement. If any contrast with medical knowledge is noted, kindly refer and report to our support team. Not be used on red alert in the absence of an expert</p>
+  </div>
+  <div style=" display: flex;
+    color: orange;
+    font-size: 20px;
+    width: 100%;
+    height: 40px;"> <div style="width: 100px;
+    margin-left: auto; cursor: pointer;">Report</div></div>
+  <p style="opacity: 0.4; margin-left: 100px;">&copy; 2024 Ohene Darko. All rights reserved</p>
+</body>
+</html>

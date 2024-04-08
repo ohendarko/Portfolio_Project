@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedAlgorythms- Calculators</title>
+  <link rel="stylesheet" href="styles/bls.css">
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="styles/news3.css">
+  <script src="script/calculators.js"></script>
+  <link rel="stylesheet" href="styles/calculators.css">
+</head>
+<body>
+  <header class="fixed-header">
+    <div class="container">
+      <div class="top-line">
+        <div><h1 style="color: rgb(101, 238, 101);">MedAlgorythms</h1></div>
+        <div> <h2>Calculators</h2></div>
+        <div class="top-line-member"></div>
+        <div class="top-line-member"></div>
+        <div class="top-line-member"></div>
+        <div class="top-line-member" style=" margin-right: 20px;"></div>
+        <div class=""><a href="home.html" style="font-size: 15px; color: rgb(242, 236, 236); text-decoration: none;">Back to Home</a></div> 
+      </div>
+    </div>
+  </header>
+  <p style="margin-top: 100px !important; margin: 20px;"><strong>QUICK ACCESS</strong></p>
+  <div class="calc-container" style="margin: 20px;">
+    <div class="bmi calc-item">
+      <p>BMI</p>
+      <p>Weight: <input class="weight" placeholder="(kg)" type="text" onkeydown="handlebmiKeydown(event)"></p>
+      <p>Height: <input class="height" placeholder="(sq.meter)" type="text" onkeydown="handlebmiKeydown(event)"></p>
+      <p style="margin-top: 10px;">
+      <button class="calculatebmi" onclick="calculatebmi();
+      ">Calculate</button></p>
+      <p class="total-bmi" style="margin-top: 10px;"><!-- Answer will be placed dynamically here--></p>
+    </div>
+  </div>
+  <div class="container">
+    <p style="margin-top: 50px;">
+      <a href="#" style="color: black; margin-left: 50px;">Back to Top</a>
+      <a href="home.html" style="color: black; margin-left: 100px;">Back to Home</a></p>
+  </div>
+  
+  <!--More calculators
+  Link
+  link
+  link-->
+  
+</body>
+</html>
