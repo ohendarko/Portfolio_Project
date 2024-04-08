@@ -16,14 +16,14 @@ Drug Dose per weight calculations
 
 
 General
-DONE Make a bigger news page --done
-DONE Create a landing page --done
-DONE Create the Calculators page --done
+DONE Make a bigger news page --complete
+DONE Create a landing page --complete
+DONE Create the Calculators page --complete
 
   4. Implement another algorithm with jquery
   5. Fix up hompage
     ***Make all buttons interactive, link topic buttons to underconstruction.html.
-    ***DONE Investigate using apis to get the latest medical news on the page.--- done
+    ***DONE Investigate using apis to get the latest medical news on the page.--- complete
   6. Fix up README.
   7. Add icons
   8. Work with flask --in sequence
