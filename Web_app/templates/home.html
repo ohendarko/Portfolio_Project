@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MedAlgorythms</title>
-  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
   <link rel="icon" href="">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="script/getnews.js"></script>
+  <script src="{{ url_for('static', filename='js/getnews.js') }}"></script>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
@@ -21,9 +21,9 @@
         <div></div>
         <div class="top-line-member">Tutorial</div>
         <div class="top-line-member"></div>
-        <div class="top-line-member"><a href="calculators.html">Calculators</a></div>
+        <div class="top-line-member"><a href="{{ url_for('calculators') }}">Calculators</a></div>
         <div class="top-line-member" style=" margin-right: 20px;">Drug Index</div>
-        <div class="top-line-member News"><a href="news.html" style="text-decoration: none;" title="See more news here">News</a></div> 
+        <div class="top-line-member News"><a href="{{ url_for('news') }}" style="text-decoration: none;" title="See more news here">News</a></div> 
       </div>
     </div>
   </header>
