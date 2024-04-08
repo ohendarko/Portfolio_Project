@@ -22,3 +22,7 @@ def news():
 @app.route("/calculators")
 def calculators():
     return render_template('calculators.html')
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000, debug=True)
