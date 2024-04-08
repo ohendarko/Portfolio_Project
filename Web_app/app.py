@@ -14,6 +14,11 @@ def acls_algorithm():
     return render_template('acls_algorythm.html')
 
 
+@app.route("/bls-algorithm")
+def bls_algorithm():
+    return render_template('bls_algorythm.html')
+
+
 @app.route("/news")
 def news():
     return render_template('news.html')
@@ -25,7 +30,7 @@ def calculators():
 
 
 @app.route("/under_construction")
-def under_construction()
+def under_construction():
     return render_template('under_construction.html')
 
 
