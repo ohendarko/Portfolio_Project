@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MedAlgorythms- Calculators</title>
-  <link rel="stylesheet" href="styles/bls.css">
-  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bls.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="styles/news3.css">
-  <script src="script/calculators.js"></script>
-  <link rel="stylesheet" href="styles/calculators.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/news3.css') }}">
+  <script src="{{ url_for('static', filename='js/calculators.js') }}"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/calculators.css') }}">
 </head>
 <body>
   <header class="fixed-header">
@@ -22,7 +22,7 @@
         <div class="top-line-member"></div>
         <div class="top-line-member"></div>
         <div class="top-line-member" style=" margin-right: 20px;"></div>
-        <div class=""><a href="home.html" style="font-size: 15px; color: rgb(242, 236, 236); text-decoration: none;">Back to Home</a></div> 
+        <div class=""><a href="{{ url_for('home') }}" style="font-size: 15px; color: rgb(242, 236, 236); text-decoration: none;">Back to Home</a></div> 
       </div>
     </div>
   </header>
@@ -41,7 +41,7 @@
   <div class="container">
     <p style="margin-top: 50px;">
       <a href="#" style="color: black; margin-left: 50px;">Back to Top</a>
-      <a href="home.html" style="color: black; margin-left: 100px;">Back to Home</a></p>
+      <a href="{{ url_for('home') }}" style="color: black; margin-left: 100px;">Back to Home</a></p>
   </div>
   
   <!--More calculators
