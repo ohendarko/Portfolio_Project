@@ -1,5 +1,7 @@
 from flask import render_template, url_for, flash, redirect
 from web_app import app
+
+
 @app.route("/welcome")
 def welcome():
     return render_template('landing_page.html')
