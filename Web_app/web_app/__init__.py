@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, flash, redirect
+from flask import Flask, url_for, flash, redirect
 
 app = Flask(__name__)
 
