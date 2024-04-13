@@ -34,3 +34,4 @@ b. Algorithm settings; navigate boxes one by one to make it more user friendly.
 c. Calculators; BMI, CrCl, ASCVD risk --in sequence
 d. Dose reminders
 e. Medicine Index
+f. Shoppping section
