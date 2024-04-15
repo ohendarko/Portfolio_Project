@@ -13,6 +13,7 @@ calculators.html
 add buttons/feature that can change number of decimal places
 button or drop down list of decimal places to choose from
 Drug Dose per weight calculations: dopamine, dobutamine, noradrenaline
+Add inferences
 
 
 General
@@ -35,3 +36,5 @@ c. Calculators; BMI, CrCl, ASCVD risk --in sequence
 d. Dose reminders
 e. Medicine Index
 f. Shoppping section
+
+Link YouTube channel to page
