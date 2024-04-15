@@ -59,7 +59,7 @@ header {
   margin-top: 100px;
   display: grid;
   place-items: center;
-  grid-template-columns: 650px 600px;
+  grid-template-columns: 850px 600px;
   justify-content: center;
 }
 
