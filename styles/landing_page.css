@@ -23,6 +23,11 @@ header {
   margin-top: 100px;
 }
 
+.image {
+  max-height: 550px;
+  width: auto;
+}
+
 .fixed-header {
   position: fixed;
   top: 0;
