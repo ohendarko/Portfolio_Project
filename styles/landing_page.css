@@ -43,6 +43,11 @@ header {
   display: grid;
   place-items: center;
   grid-template-columns: 500px 500px;
+  justify-content: center;
+}
+
+.item {
+  justify-content: center;
 }
 
 .top-line {
