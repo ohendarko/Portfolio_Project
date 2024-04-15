@@ -4,7 +4,7 @@ from web_app import app
 
 @app.route("/welcome")
 def welcome():
-    return render_template('landing_page.html')
+    return render_template('LandingPage.html')
 
 
 @app.route("/")
