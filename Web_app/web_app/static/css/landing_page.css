@@ -1,0 +1,107 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: rgb(41, 40, 40) !important;
+  color: white;
+}
+
+.header-placeholder {
+  display: none;
+  /* Initially hide the placeholder */
+}
+
+header {
+  background-color: rgb(41, 40, 40);
+  width: 100% !important;
+  border-bottom: 2px solid #230a0a;
+  display: flex;
+}
+
+.headline {
+  position: relative;
+}
+
+.headimage {
+  z-index: -1;
+}
+
+.headline .headimage {
+  border-bottom: 2px solid #230a0a;
+  max-height: 550px;
+  width: auto;
+  margin-top: 100px;
+}
+
+.image {
+  height: 500px;
+  width: auto;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /*background-color: #333;*/
+  color: white;
+}
+
+.container {
+  position: relative;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+}
+
+.containeritem {
+  margin-top: 100px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 850px 600px;
+  justify-content: center;
+}
+
+.item {
+  justify-content: center;
+  color: white !important;
+}
+
+.top-line {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 450px 100px 120px 120px 120px 120px 100px !important;
+  align-self: center;
+  align-items: center;
+  /*left: 50%;
+  transform: translate(-50%);*/
+  font-weight: bold;
+  position: relative;
+  margin-top: 20px;
+}
+
+.front {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /* Center the text horizontally */
+  color: white;
+  /* Text color */
+}
+
+.front h1 {
+  margin: 0;
+  /* Remove default margin */
+  font-size: 5em;
+  /* Adjust font size as needed */
+  color: black;
+}
+
+.back {
+  z-index: -1;
+}
+
+.item
