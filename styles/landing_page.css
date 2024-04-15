@@ -59,12 +59,13 @@ header {
   margin-top: 100px;
   display: grid;
   place-items: center;
-  grid-template-columns: 500px 500px;
+  grid-template-columns: 650px 600px;
   justify-content: center;
 }
 
 .item {
   justify-content: center;
+  color: white !important;
 }
 
 .top-line {
@@ -102,3 +103,5 @@ header {
 .back {
   z-index: -1;
 }
+
+.item
