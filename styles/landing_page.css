@@ -16,6 +16,14 @@ header {
   display: flex;
 }
 
+.headline {
+  position: relative;
+}
+
+.headimage {
+  z-index: -1;
+}
+
 .headline .headimage {
   border-bottom: 2px solid #230a0a;
   max-height: 550px;
@@ -24,7 +32,7 @@ header {
 }
 
 .image {
-  max-height: 550px;
+  height: minmax(250px, 550px);
   width: auto;
 }
 
@@ -38,10 +46,13 @@ header {
 }
 
 .container {
-  display: flex;
+  position: relative;
+  display: grid;
   place-items: center;
   justify-content: center;
   width: 100%;
+  align-items: center;
+  align-content: center;
 }
 
 .containeritem {
@@ -67,4 +78,26 @@ header {
   font-weight: bold;
   position: relative;
   margin-top: 20px;
+}
+
+.front {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /* Center the text horizontally */
+  color: white;
+  /* Text color */
+}
+
+.front h1 {
+  margin: 0;
+  /* Remove default margin */
+  font-size: 2em;
+  /* Adjust font size as needed */
+}
+
+.back {
+  z-index: -1;
 }
