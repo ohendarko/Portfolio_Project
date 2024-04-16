@@ -28,6 +28,7 @@ header {
   /* Ensure the image doesn't exceed its container's height */
   object-fit: cover;
   /* Cover the container with the image */
+  opacity: 0.5;
 
 }
 
@@ -134,4 +135,9 @@ header {
   /* Center the background image */
   z-index: -1;
   /* Ensure the background is behind other content */
+}
+
+.text-with-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Offset-x, offset-y, blur-radius, color */
 }
