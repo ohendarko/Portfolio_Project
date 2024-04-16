@@ -22,7 +22,7 @@ header {
 }
 
 .headimage {
-  max-width: 100%;
+  width: 2000px;
   /* Ensure the image fills its container */
   max-height: 100%;
   /* Ensure the image doesn't exceed its container's height */
