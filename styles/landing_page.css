@@ -22,8 +22,13 @@ header {
 }
 
 .headimage {
-  width: 100%;
-  height: fit-content;
+  max-width: 100%;
+  /* Ensure the image fills its container */
+  max-height: 100%;
+  /* Ensure the image doesn't exceed its container's height */
+  object-fit: cover;
+  /* Cover the container with the image */
+
 }
 
 .headline .headimage {
@@ -32,8 +37,15 @@ header {
 }
 
 .image {
-  height: 500px;
+  /*height: 500px;
   width: auto;
+  overflow: hidden;*/
+  max-width: 100%;
+  /* Ensure the image fills its container */
+  max-height: 100%;
+  /* Ensure the image doesn't exceed its container's height */
+  object-fit: cover;
+  /* Cover the container with the image */
 }
 
 .fixed-header {
@@ -53,18 +65,23 @@ header {
   width: 100%;
   align-items: center;
   align-content: center;
+  overflow: hidden;
 }
 
 .containeritem {
   margin-top: 100px;
   display: grid;
   place-items: center;
-  grid-template-columns: 850px 600px;
+  grid-template-columns: minmax(0, 850px) minmax(0, 600px);
   justify-content: center;
 }
 
 .item {
+
+  /* Ensure items are displayed as flex containers */
   justify-content: center;
+  align-items: center;
+  /* Center items vertically */
   color: white !important;
 }
 
