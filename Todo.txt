@@ -38,3 +38,5 @@ e. Medicine Index
 f. Shoppping section
 
 Link YouTube channel to page
+
+I want the picture to fill the whole div. Hide overlap.
