@@ -37,6 +37,10 @@ d. Dose reminders
 e. Medicine Index
 f. Shoppping section
 
+Shoppping
+Custom made wears
+MedAlgorythms branded wears
+
 Link YouTube channel to page
 
-I want the picture to fill the whole div. Hide overlap.
+
