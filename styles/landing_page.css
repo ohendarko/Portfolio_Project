@@ -104,4 +104,17 @@ header {
   z-index: -1;
 }
 
-.item
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/Architecture-wallpaper-9788281 - Copy.jpg');
+  background-size: cover;
+  /* Cover the entire container */
+  background-position: center;
+  /* Center the background image */
+  z-index: -1;
+  /* Ensure the background is behind other content */
+}
