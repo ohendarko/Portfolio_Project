@@ -78,6 +78,14 @@ header {
   justify-content: center;
 }
 
+.containeritem a {
+  color: rgb(27, 236, 226);
+}
+
+.containeritem a:hover {
+  color: rgb(255, 255, 255);
+}
+
 .item {
 
   /* Ensure items are displayed as flex containers */

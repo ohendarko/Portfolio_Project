@@ -9,7 +9,7 @@ body {
 
 header {
   background-color: rgb(41, 40, 40);
-  width: 100% !important;
+  max-width: 100% !important;
   border-bottom: 2px solid #230a0a;
   display: flex;
 }
@@ -25,8 +25,8 @@ header {
 
 .container {
   display: grid;
-  place-items: center;
-  width: 100%;
+  justify-content: center;
+  max-width: 100%;
 }
 
 .top-line-member {
@@ -49,8 +49,8 @@ header {
 
 .top-line {
   display: grid;
-  width: 100%;
-  grid-template-columns: 450px 100px 120px 120px 120px 120px 100px !important;
+  max-width: 100%;
+  grid-template-columns: 1fr 100px 120px 120px 120px 120px 1fr !important;
   align-self: center;
   align-items: center;
   /*left: 50%;
@@ -174,7 +174,7 @@ hr {
 .algorithms {
   height: minmax(auto, 900px);
   display: grid;
-  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-columns: 1fr 300px 300px 1fr;
   margin-top: 50px;
   /*left: 50%;
   transform: translate(15%);*/
