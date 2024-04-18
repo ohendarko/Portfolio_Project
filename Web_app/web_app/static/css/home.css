@@ -174,7 +174,7 @@ hr {
 .algorithms {
   height: minmax(auto, 900px);
   display: grid;
-  grid-template-columns: 1fr 300px 300px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-top: 50px;
   /*left: 50%;
   transform: translate(15%);*/
@@ -182,6 +182,10 @@ hr {
   overflow-x: unset;
   place-items: center;
   align-content: center;
+}
+
+.algorithms button {
+  margin: 20px;
 }
 
 .algorithms-container {
