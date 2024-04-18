@@ -9,33 +9,38 @@ from flask_login import login_user, current_user, logout_user, login_required
 
 
 @app.route("/")
-@app.route("/welcome")
-def welcome():
+@app.route("/home")
+def home():
     return render_template('LandingPage.html')
 
 
-@app.route("/home")
-def home():
+@app.route("/dashboard")
+@login_required
+def dashboard():
     image_file = url_for('static', filename='profile_pics/' + current_user.image_file)
     return render_template('home.html', image_file=image_file)
 
 
 @app.route("/acls-algorithm")
+@login_required
 def acls_algorithm():
     return render_template('acls_algorythm.html')
 
 
 @app.route("/bls-algorithm")
+@login_required
 def bls_algorithm():
     return render_template('bls_algorythm.html')
 
 
 @app.route("/news")
+@login_required
 def news():
     return render_template('news.html')
 
 
 @app.route("/calculators")
+@login_required
 def calculators():
     return render_template('calculators.html')
 
@@ -46,6 +51,7 @@ def under_construction():
 
 
 @app.route("/about")
+@login_required
 def about():
     return render_template('about.html', title='About')
 
@@ -53,7 +59,7 @@ def about():
 @app.route("/register", methods=['GET', 'POST'])
 def register():
     if current_user.is_authenticated:
-        return redirect(url_for('home'))
+        return redirect(url_for('dashboard'))
     form = RegistrationForm()
     if form.validate_on_submit():
         hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
@@ -68,14 +74,14 @@ def register():
 @app.route("/login", methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
-        return redirect(url_for('home'))
+        return redirect(url_for('dashboard'))
     form = LoginForm()
     if form.validate_on_submit():
         user = User.query.filter_by(email=form.email.data).first()
         if user and bcrypt.check_password_hash(user.password, form.password.data):
             login_user(user, remember=form.remember.data)
             next_page = request.args.get('next')
-            return redirect(next_page) if next_page else redirect(url_for('home'))
+            return redirect(next_page) if next_page else redirect(url_for('dashboard'))
         else:
             flash('Login Unsuccessful. Please check email and password', 'danger')
     return render_template('login.html', title='Register', form=form)
@@ -85,7 +91,7 @@ def login():
 def logout():
     session.pop('image_file', None)
     logout_user()
-    return redirect(url_for('welcome'))
+    return redirect(url_for('home'))
 
 
 def save_picture(form_picture):
