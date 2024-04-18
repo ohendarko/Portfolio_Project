@@ -1,6 +1,7 @@
+"""initializes web_app directory as a package"""
 from flask import Flask, url_for, flash, redirect
 from flask_sqlalchemy import SQLAlchemy
-from flask_bcrypt import  Bcrypt
+from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
 
 import email_validator

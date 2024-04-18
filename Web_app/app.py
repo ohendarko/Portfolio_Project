@@ -1,3 +1,4 @@
+"""Main executor file"""
 from web_app import app
 
 

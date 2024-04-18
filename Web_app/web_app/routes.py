@@ -1,3 +1,4 @@
+"""Contains endpoint definitions"""
 import secrets
 from PIL import Image
 import os
@@ -11,12 +12,14 @@ from flask_login import login_user, current_user, logout_user, login_required
 @app.route("/")
 @app.route("/home")
 def home():
+    """link to homepage"""
     return render_template('LandingPage.html')
 
 
 @app.route("/dashboard")
 @login_required
 def dashboard():
+    """Link to dashboard"""
     image_file = url_for('static', filename='profile_pics/' + current_user.image_file)
     return render_template('home.html', image_file=image_file)
 
@@ -24,40 +27,47 @@ def dashboard():
 @app.route("/acls-algorithm")
 @login_required
 def acls_algorithm():
+    """Link to acls algorythm"""
     return render_template('acls_algorythm.html')
 
 
 @app.route("/bls-algorithm")
 @login_required
 def bls_algorithm():
+    """Link to bls algorythm"""
     return render_template('bls_algorythm.html')
 
 
 @app.route("/news")
 @login_required
 def news():
+    """Link to news page"""
     return render_template('news.html')
 
 
 @app.route("/calculators")
 @login_required
 def calculators():
+    """Link to calculators page"""
     return render_template('calculators.html')
 
 
 @app.route("/under_construction")
 def under_construction():
+    """Under construction"""
     return render_template('under_construction.html')
 
 
 @app.route("/about")
 @login_required
 def about():
+    """Link to about page: inaccessible on app"""
     return render_template('about.html', title='About')
 
 
 @app.route("/register", methods=['GET', 'POST'])
 def register():
+    """Link to register"""
     if current_user.is_authenticated:
         return redirect(url_for('dashboard'))
     form = RegistrationForm()
@@ -73,6 +83,7 @@ def register():
 
 @app.route("/login", methods=['GET', 'POST'])
 def login():
+    """Link to log in"""
     if current_user.is_authenticated:
         return redirect(url_for('dashboard'))
     form = LoginForm()
@@ -89,12 +100,15 @@ def login():
 
 @app.route("/logout")
 def logout():
+    """Log out"""
     session.pop('image_file', None)
     logout_user()
     return redirect(url_for('home'))
 
 
 def save_picture(form_picture):
+    """Saves pictures and enables update on account/database.
+    Renders resolution to reduce space consumption on server"""
     random_hex = secrets.token_hex(8)
     _, f_ext = os.path.splitext(form_picture.filename)
     picture_fn = random_hex + f_ext
@@ -109,6 +123,7 @@ def save_picture(form_picture):
 @app.route("/account", methods=['GET', 'POST'])
 @login_required
 def account():
+    """Link to account"""
     form = UpdateAccountForm()
     if form.validate_on_submit():
         if form.picture.data:

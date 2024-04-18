@@ -1,3 +1,4 @@
+"""Contains forms for logins, registrations and updates"""
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileAllowed
 from flask_login import current_user
@@ -7,6 +8,7 @@ from web_app.models import User
 
 
 class RegistrationForm(FlaskForm):
+    """Registration form"""
     username = StringField('Username',
                            validators=[DataRequired(), Length(min=2, max=20)])
     email = StringField('Email',
@@ -17,17 +19,20 @@ class RegistrationForm(FlaskForm):
     submit = SubmitField('Sign Up')
 
     def validate_username(self, username):
+        """Validates username unique field descriptor on form to avoid 501 error"""
         user = User.query.filter_by(username=username.data).first()
         if user:
             raise ValidationError('This username is taken. Please choose a different one.')
 
     def validate_email(self, email):
+        """Validates email unique field descriptor on form to avoid 501 error"""
         user = User.query.filter_by(email=email.data).first()
         if user:
             raise ValidationError('This email is already in use.')
 
 
 class LoginForm(FlaskForm):
+    """Login form"""
     email = StringField('Email',
                         validators=[DataRequired(), Email()])
     password = PasswordField('Password', validators=[DataRequired()])
@@ -36,6 +41,7 @@ class LoginForm(FlaskForm):
 
 
 class UpdateAccountForm(FlaskForm):
+    """Update account form"""
     username = StringField('Username',
                            validators=[DataRequired(), Length(min=2, max=20)])
     email = StringField('Email',
@@ -44,12 +50,14 @@ class UpdateAccountForm(FlaskForm):
     submit = SubmitField('Update')
 
     def validate_username(self, username):
+        """Validates username unique field descriptor on form to avoid 501 error"""
         if username.data != current_user.username:
             user = User.query.filter_by(username=username.data).first()
             if user:
                 raise ValidationError('This username is taken. Please choose a different one.')
 
     def validate_email(self, email):
+        """Validates email unique field descriptor on form to avoid 501 error"""
         if email.data != current_user.email:
             user = User.query.filter_by(email=email.data).first()
             if user:
