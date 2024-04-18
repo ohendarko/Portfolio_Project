@@ -9,38 +9,33 @@ from flask_login import login_user, current_user, logout_user, login_required
 
 
 @app.route("/")
-@app.route("/home")
-def home():
+@app.route("/welcome")
+def welcome():
     return render_template('LandingPage.html')
 
 
-@app.route("/dashboard")
-@login_required
-def dashboard():
+@app.route("/home")
+def home():
     image_file = url_for('static', filename='profile_pics/' + current_user.image_file)
     return render_template('home.html', image_file=image_file)
 
 
 @app.route("/acls-algorithm")
-@login_required
 def acls_algorithm():
     return render_template('acls_algorythm.html')
 
 
 @app.route("/bls-algorithm")
-@login_required
 def bls_algorithm():
     return render_template('bls_algorythm.html')
 
 
 @app.route("/news")
-@login_required
 def news():
     return render_template('news.html')
 
 
 @app.route("/calculators")
-@login_required
 def calculators():
     return render_template('calculators.html')
 
@@ -51,7 +46,6 @@ def under_construction():
 
 
 @app.route("/about")
-@login_required
 def about():
     return render_template('about.html', title='About')
 
