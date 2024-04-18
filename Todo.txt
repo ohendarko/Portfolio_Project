@@ -36,6 +36,8 @@ c. Calculators; BMI, CrCl, ASCVD risk --in sequence
 d. Dose reminders
 e. Medicine Index
 f. Shoppping section
+g. Games, profile cards, achievement system
+h. Throne/League system: random question pops up, you maintain or lose popularity(or something) if you get the anser wrong.
 
 Shoppping
 Custom made wears
