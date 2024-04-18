@@ -6,9 +6,9 @@
   /* Adjust gap between news items as needed */
   margin: 15px;
   /* Center the news container horizontally */
-  width: 100%
-    /* Set a maximum width for the news container */
-    padding: 0 20px;
+  width: 100%;
+  /* Set a maximum width for the news container */
+  padding: 0 20px;
   /* Add padding to the left and right of the news container */
 }
 
@@ -27,4 +27,14 @@
 
 .white {
   color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 600px) {
+
+  /* Scale down all elements by 80% for mobile view */
+  body {
+    transform: scale(0.8);
+    transform-origin: top left;
+    /* Keep the scaling origin at the top left corner */
+  }
 }

@@ -84,3 +84,9 @@ a.article-title:hover {
 .account-heading {
   font-size: 2.5rem;
 }
+
+@media only screen and (max-width: 600px) {
+  .content-section {
+    margin-top: 100px;
+  }
+}

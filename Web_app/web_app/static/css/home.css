@@ -177,7 +177,6 @@ hr {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  ;
   grid-gap: 30px 20px;
   margin-top: 50px;
   /*left: 50%;
@@ -207,6 +206,7 @@ hr {
   height: 60px;
   width: 340px;
   cursor: pointer;
+  font-size: 20px;
 }
 
 .select-algorithm2 {
@@ -215,8 +215,8 @@ hr {
   border-radius: 1cap;
   border: none;
   height: 60px;
-  width: 200px;
-  font-size: 18px;
+  width: 340px;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -248,4 +248,14 @@ a:visited {
 
 .btn {
   font-size: 17px !important;
+}
+
+@media only screen and (max-width: 600px) {
+
+  /* Scale down all elements by 80% for mobile view */
+  body {
+    transform: scale(0.8);
+    transform-origin: top left;
+    /* Keep the scaling origin at the top left corner */
+  }
 }

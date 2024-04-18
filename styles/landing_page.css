@@ -150,3 +150,13 @@ header {
 .about-us a:hover {
   color: white;
 }
+
+@media only screen and (max-width: 600px) {
+
+  /* Scale down all elements by 80% for mobile view */
+  body {
+    transform: scale(0.8);
+    transform-origin: top left;
+    /* Keep the scaling origin at the top left corner */
+  }
+}
