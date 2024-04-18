@@ -20,6 +20,12 @@ body {
   background-color: rgb(241, 196, 196);
 }
 
+.arrow-down {
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
+
 .asystole {
   border-color: black;
   border-width: 1px;
