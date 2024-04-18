@@ -188,6 +188,11 @@ hr {
   margin: 20px;
 }
 
+.algorithms-div {
+  max-width: 240px;
+}
+
+
 .algorithms-container {
   margin-bottom: 70px;
 }
