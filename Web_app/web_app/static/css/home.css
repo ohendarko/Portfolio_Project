@@ -51,7 +51,7 @@ header {
 .top-line {
   display: grid;
   max-width: 100%;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr !important;
+  grid-template-columns: repeat(7, 1fr) !important;
   align-self: center;
   align-items: center;
   /*left: 50%;
