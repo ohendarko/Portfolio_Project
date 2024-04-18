@@ -1,7 +1,5 @@
 # Portfolio Project
-___
 ## MedAlgorythms
----
 
 This a documentaion of the code for a web app called MedAlgorythms.
 Link to deployed site: [https//:www.medalgorythms.glocked.tech](https://medalgorythms.glocked.tech "Medalgorythms")
@@ -60,3 +58,4 @@ $
 * League/Throne system
 * Achievements profile
 * Shopping
+* Discussion Forums

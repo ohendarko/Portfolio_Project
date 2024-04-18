@@ -38,6 +38,7 @@ e. Medicine Index
 f. Shoppping section
 g. Games, profile cards, achievement system
 h. Throne/League system: random question pops up, you maintain or lose popularity(or something) if you get the anser wrong.
+i. Discussion Forums
 
 Shoppping
 Custom made wears
