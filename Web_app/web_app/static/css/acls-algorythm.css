@@ -11,6 +11,10 @@ body {
   background-color: rgb(209, 234, 246);
 }
 
+.container {
+  text-align: center;
+}
+
 .shock-box {
   border-color: black;
   border-width: 1px;
