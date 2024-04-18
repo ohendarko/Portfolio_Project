@@ -84,7 +84,7 @@ header {
   margin-top: 100px;
   display: grid;
   place-items: center;
-  grid-template-columns: minmax(0, 850px) minmax(0, 600px);
+  grid-template-columns: 1fr, 1fr;
   justify-content: center;
 }
 
