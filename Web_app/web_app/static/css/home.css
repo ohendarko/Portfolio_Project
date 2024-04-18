@@ -21,6 +21,7 @@ header {
   width: 100%;
   /*background-color: #333;*/
   color: white;
+  z-index: 3;
 }
 
 .container {
@@ -175,6 +176,7 @@ hr {
   height: minmax(auto, 900px);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px 20px;
   margin-top: 50px;
   /*left: 50%;
   transform: translate(15%);*/
@@ -184,9 +186,7 @@ hr {
   align-content: center;
 }
 
-.algorithms button {
-  margin: 20px;
-}
+.algorithms button {}
 
 .algorithms-div {
   max-width: 240px;
