@@ -118,6 +118,19 @@ header {
   margin-top: 20px;
 }
 
+.top {
+  display: grid;
+  width: 100%;
+  align-self: center;
+  align-items: center;
+  /*left: 50%;
+  transform: translate(-50%);*/
+  font-weight: bold;
+  position: relative;
+  margin-top: 20px;
+  justify-content: center;
+}
+
 .front {
   position: absolute;
   top: 50%;
