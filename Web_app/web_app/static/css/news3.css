@@ -6,9 +6,9 @@
   /* Adjust gap between news items as needed */
   margin: 15px;
   /* Center the news container horizontally */
-  width: 100%
-    /* Set a maximum width for the news container */
-    padding: 0 20px;
+  width: 100%;
+  /* Set a maximum width for the news container */
+  padding: 0 20px;
   /* Add padding to the left and right of the news container */
 }
 
