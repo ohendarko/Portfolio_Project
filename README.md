@@ -1,13 +1,33 @@
 # Portfolio Project
 ## MedAlgorythms
 
-This a documentaion of the code for a web app called MedAlgorythms.
-Link to deployed site: [https//:www.medalgorythms.glocked.tech](https://medalgorythms.glocked.tech "Medalgorythms")
+
+Although the app is intended to have diverse features, the core of MedAlgorythms is the "Algorythms" section. The intention is to design a "virtual assistant" of a sort that guides your next course of action based on prompts and inputs. 
+Let's take a short example from the only algorythm under works; ALCS algorythm.
+If you start up the app by following the instructions below, you should see ACLS algorythm on a blue button under the 'IN PROGRESS' heading that should direct you to another page. You'll be presented with your initial expected course of action. After making sure the initial box has been fulfilled, you're then asked if the rhythm is shockable or non-shockable. This app is designed with health practitioners in mind so apologies if I'm not making sense. But fast forward, you'd notice that, if you click yes or no, you're presented with different courses of action and it follows suit. So it's offering some sort of assistance.
+Currently it's a click and respond module. We see it as in its fetal stages, but the end goal(adult stage) is to generate some AI. 
+There are a lot of optimizations I have to do and more features to add and to correct; dosing, technique instructions, autoruns/autoplay, etc.
+What you see is not exhaustive. It's just a template to the many algorythms that will be implemented later in the future. The reason why only one is available is I prefer to run, test and upgrade one prototype to optimised and efficient code, and make it as user friendly as possible and then carry the principles throughout, than run a lot of algorythms and have to alter all codes one by one as insights progress.
+
+  >This project will grow as my knowlege in programming grows.
+  ```HTML5, CSS3, JavaScript```
+
+Other sections worth noting:
+* Medical Calculators
+* Health News
+
+This documentation will change as updates continue to rolled over. This is my second log(Log2) and it will increase as I add more updates and change the documentation.
+(Log2).
+
 
 Author: 
 * Kwadwo Ohene Darko; 
   * [LinkedIn](https://www.linkedin.com/in/dr-kwadwo-ohene-darko "Kwadwo Ohene Darko, PharmD")
   * [X (formerly known as twitter)](https://x.com/ohene_kwadwo?t=Z9WjeZ5vPnkROslQYfWiVA&s=09 "@ohene_kwadwo")
+
+
+-------
+## Running the app.
 
 ### Required Module Installations:
 `$ pip install `
