@@ -1,12 +1,12 @@
-# Portfolio Project
-## MedAlgorythms
+# Portfolio Project - MedAlgorythms
 
+## Objective
+Although the app is intended to have diverse features, the core of MedAlgorythms is the "Algorythms" section. The intention is to design a "virtual assistant" of a sort that guides your next course of action based on prompts and inputs. This has the potential to enhance multiple aspects of critical care as well as academic study.
 
-Although the app is intended to have diverse features, the core of MedAlgorythms is the "Algorythms" section. The intention is to design a "virtual assistant" of a sort that guides your next course of action based on prompts and inputs. 
 Let's take a short example from the only algorythm under works; ALCS algorythm.
-If you start up the app by following the instructions below, you should see ACLS algorythm on a blue button under the 'IN PROGRESS' heading that should direct you to another page. You'll be presented with your initial expected course of action. After making sure the initial box has been fulfilled, you're then asked if the rhythm is shockable or non-shockable. This app is designed with health practitioners in mind so apologies if I'm not making sense. But fast forward, you'd notice that, if you click yes or no, you're presented with different courses of action and it follows suit. So it's offering some sort of assistance.
-Currently it's a click and respond module. We see it as in its fetal stages, but the end goal(adult stage) is to generate some AI. 
-There are a lot of optimizations I have to do and more features to add and to correct; dosing, technique instructions, autoruns/autoplay, etc.
+If you start up the app by following the instructions below, you should see ACLS algorythm on a blue button under the 'IN PROGRESS' heading. Clicking that should direct you to another page. You'll be presented with your initial expected course of action. After making sure the initial box has been fulfilled, you're then asked if the rhythm is shockable or non-shockable. This app is designed with health practitioners in mind so apologies if I'm not making sense. But fast forward, you'd notice that, if you click yes or no, you're presented with different courses of action and it follows suit. So it's offering some sort of assistance, and has potential be used as a learning tool.
+Currently it's a click and respond module. I see it as in its fetal stages, but the end goal(adult stage) is to generate some AI. 
+There are a lot of optimizations I have to do and more features to add and to correct; dosing, technique instructions, autoruns/autoplay, live simple calculator, etc.
 What you see is not exhaustive. It's just a template to the many algorythms that will be implemented later in the future. The reason why only one is available is I prefer to run, test and upgrade one prototype to optimised and efficient code, and make it as user friendly as possible and then carry the principles throughout, than run a lot of algorythms and have to alter all codes one by one as insights progress.
 
   >This project will grow as my knowlege in programming grows.
@@ -74,6 +74,7 @@ $
 
 
 ### Future updates
+* Drug dose calculators
 * Quiz cards
 * League/Throne system
 * Achievements profile
