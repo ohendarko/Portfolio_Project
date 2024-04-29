@@ -1,7 +1,7 @@
 # Portfolio Project - MedAlgorythms
 
 ## Objective
-Although the app is intended to have diverse features, the core of MedAlgorythms is the "Algorythms" section. The intention is to design a "virtual assistant" of a sort that guides your next course of action based on prompts and inputs. This has the potential to enhance multiple aspects of critical care as well as academic study.
+Although the app is intended to have diverse features, the core of MedAlgorythms is the "Algorythms" section. The intention is to design a "virtual assistant" of a sort that guides your next course of action based on prompts and inputs. This has the potential to be an mHealth intervention to enhance multiple aspects of critical care as well as academic study.
 
 Let's take a short example from the only algorythm under works; ALCS algorythm.
 If you start up the app by following the instructions below, you should see ACLS algorythm on a blue button under the 'IN PROGRESS' heading. Clicking that should direct you to another page. You'll be presented with your initial expected course of action. After making sure the initial box has been fulfilled, you're then asked if the rhythm is shockable or non-shockable. This app is designed with health practitioners in mind so apologies if I'm not making sense. But fast forward, you'd notice that, if you click yes or no, you're presented with different courses of action and it follows suit. So it's offering some sort of assistance, and has potential be used as a learning tool.
