@@ -10,7 +10,7 @@ There are a lot of optimizations I have to do and more features to add and to co
 What you see is not exhaustive. It's just a template to the many algorythms that will be implemented later in the future. The reason why only one is available is I prefer to run, test and upgrade one prototype to optimised and efficient code, and make it as user friendly as possible and then carry the principles throughout, than run a lot of algorythms and have to alter all codes one by one as insights progress.
 
   >This project will grow as my knowlege in programming grows.
-  ```HTML5, CSS3, JavaScript```
+  ```Python, HTML5, CSS3, JavaScript```
 
 Other sections worth noting:
 * Medical Calculators
