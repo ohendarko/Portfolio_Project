@@ -72,7 +72,6 @@ pyOpenSSL==21.0.0
 pyparsing==2.4.7
 pyperclip==1.8.2
 pyRFC3339==1.1
-python-apt==2.4.0+ubuntu2
 python-dateutil==2.8.2
 python-dotenv==1.0.0
 pytz==2023.3.post1
@@ -91,7 +90,6 @@ Sublist3r==1.0
 systemd-python==234
 typing_extensions==4.9.0
 tzdata==2023.3
-ubuntu-advantage-tools==8001
 ufw==0.36.1
 unattended-upgrades==0.1
 urllib3==2.1.0
